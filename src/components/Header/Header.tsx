@@ -123,15 +123,15 @@ const Header = () => {
           } bg-white drop-shadow-md py-4 fixed w-full z-50 `}
         >
           <div className="layout lg:px-4 px-6">
-            <div className=" grid lg:grid-cols-8 grid-cols-2 items-center gap-[120px] justify-between ">
-              <Link href="/" className=" lg:col-span-1 ">
+            <div className=" grid lg:grid-cols-12 grid-cols-2 items-center gap-[120px] justify-between ">
+              <Link href="/" className=" lg:col-span-2 ">
                 <Image
                   alt="loading"
                   src={logo}
-                  className="h-[75px] w-[75px] object-cover"
+                  className="h-[85px] w-[85px] object-cover"
                 ></Image>
               </Link>
-              <div className=" lg:flex justify-center items-center hidden lg:col-span-6  gap-[30px]">
+              <div className=" lg:flex justify-center items-center hidden lg:col-span-8  gap-[30px]">
                 {header_items.map((data: any, index) => {
                   return (
                     <div key={index} className="">
@@ -157,8 +157,8 @@ const Header = () => {
                   />
                 </Link>
               </div>
-              <div className="hidden lg:flex col-span-1">
-                <Link href="/" className=" lg:col-span-1 ">
+              <div className="hidden lg:flex lg:col-span-2 justify-end">
+                <Link href="/" className=" ">
                   <Image
                     alt="loading"
                     src={logo2}
