@@ -27,7 +27,7 @@ const ContactForm = () => {
         <Form
           form={form}
           layout="vertical"
-          className="flex flex-col gap-4 "
+          className="flex flex-col gap-4"
           onFinish={handleContactSubmit}
         >
           <div className="flex flex-col gap-4">

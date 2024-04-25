@@ -16,8 +16,16 @@ const Footer = () => {
           slug: "/about-us",
         },
         {
-          subName: "Academic Programs",
-          slug: "/academic-programs",
+          subName: "Teams",
+          slug: "/teams",
+        },
+        {
+          subName: "Gallery",
+          slug: "/gallery",
+        },
+        {
+          subName: "Blog",
+          slug: "/blog",
         },
       ],
     },
@@ -31,7 +39,7 @@ const Footer = () => {
 
         {
           subName: "Privacy Policy",
-          slug: "/privacy-policy",
+          slug: "/privacy",
         },
       ],
     },
@@ -135,7 +143,7 @@ const Footer = () => {
                 </div>
               </a>
             </div>
-            <div> ©Next Aussie Tech 2023, All rights reserved</div>
+            <div> ©School 2023, All rights reserved</div>
           </div>
         </div>
       </div>

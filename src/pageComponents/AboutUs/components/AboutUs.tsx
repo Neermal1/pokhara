@@ -1,11 +1,9 @@
-import ComponentHeader from "../../../components/componentHeader/ComponentHeader";
-
 //Images
+import Button from "@/components/button/components/Button";
+import Link from "next/link";
+import repairtwo from "../../../../public/images/aboutus/reapairtwo.jpg";
 import repairone from "../../../../public/images/aboutus/repairone.jpg";
 import repairthree from "../../../../public/images/aboutus/repairthree.jpg";
-import repairtwo from "../../../../public/images/aboutus/reapairtwo.jpg";
-import Link from "next/link";
-import Button from "@/components/button/components/Button";
 
 //react icons
 
