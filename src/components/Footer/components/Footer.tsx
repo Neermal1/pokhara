@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import logo from "../../../../public/images/logo/logo1.jpg";
+import Image from "next/image";
 const Footer = () => {
   const footer_item = [
     {
@@ -67,20 +69,18 @@ const Footer = () => {
             <div className="col-span-1">
               <div className="flex flex-col gap-8">
                 <div>
-                  {/* <Image
+                  <Image
                     src={logo}
                     alt=""
                     className=" w-[60px] object-contain  "
-                  /> */}
-                  ABC
+                  />
                 </div>
                 <div className="text-[14px]">
-                  Our College is a cutting-edge IT company based in Australia,
-                  dedicated to pushing the boundaries of technology and
-                  innovation. With a team of highly skilled professionals and a
-                  commitment to excellence, Next Aussie Tech aims to be at the
-                  forefront of the digital revolution, delivering transformative
-                  solutions for businesses and individuals alike.
+                  Our school is a vibrant community dedicated to nurturing
+                  students growth and learning. Its a place where educators are
+                  passionate about providing quality education and support,
+                  while students are encouraged to explore their interests and
+                  reach their full potential
                 </div>
               </div>
             </div>

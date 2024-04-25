@@ -1,21 +1,25 @@
 //svg images
+import ComponentHeader from "@/components/componentHeader/ComponentHeader";
 import Image from "next/image";
 import Link from "next/link";
-import digitalsvg from "../../../public/images/services/digitalsvg.svg";
-import mobilesvg from "../../../public/images/services/mobileapp.svg";
-import ComponentHeader from "@/components/componentHeader/ComponentHeader";
+import studentone from "../../../public/images/academicprograms/studentone.jpg";
+import studenttwo from "../../../public/images/academicprograms/studenttwo.jpg";
+import studentthree from "../../../public/images/academicprograms/studentthree.jpg";
+import studentfour from "../../../public/images/academicprograms/studentfour.jpg";
+import studentfive from "../../../public/images/academicprograms/studentfive.jpg";
+import studentsix from "../../../public/images/academicprograms/studentsix.jpg";
 
 const ServiceCollection = ({ heading }: any) => {
   const serviceList = [
     {
-      img: digitalsvg,
+      img: studentone,
       service_name: "Academic Advising",
       service_desc:
         "Professional advisors help students navigate academic requirements, choose majors, plan courses, and explore career paths.",
       slug: "academic-advising",
     },
     {
-      img: mobilesvg,
+      img: studenttwo,
 
       service_name: "Tutoring Center",
       service_desc:
@@ -23,7 +27,7 @@ const ServiceCollection = ({ heading }: any) => {
       slug: "tutoring-center",
     },
     {
-      img: digitalsvg,
+      img: studentthree,
 
       service_name: "Career Services",
       service_desc:
@@ -31,14 +35,14 @@ const ServiceCollection = ({ heading }: any) => {
       slug: "career-services",
     },
     {
-      img: digitalsvg,
+      img: studentfour,
       service_name: "Health Services",
       service_desc:
         "On-campus medical care for minor illnesses, injuries, and preventive health services, as well as referrals to off-campus healthcare providers when needed.",
       slug: "health-services",
     },
     {
-      img: mobilesvg,
+      img: studentfive,
 
       service_name: "Disability Support Services",
       service_desc:
@@ -46,7 +50,7 @@ const ServiceCollection = ({ heading }: any) => {
       slug: "disability-support-services",
     },
     {
-      img: digitalsvg,
+      img: studentsix,
 
       service_name: "Financial Aid Office",
       service_desc:
@@ -80,12 +84,7 @@ const ServiceCollection = ({ heading }: any) => {
                       data-aos-duration="1000"
                       // href={`/academic-programs/${data?.slug}`}
                       href="#"
-                      className="card drop-shadow-lg  border-[2px] dark:bg-gray-900 bg-white p-6 dark:text-white black-color inline-block max-w-full break-words"
-                      style={{
-                        borderImage:
-                          "linear-gradient(15deg, transparent 35%, #ee7c18,#f7c821) 1",
-                        borderRadius: "2px",
-                      }}
+                      className=" drop-shadow-lg rounded-[8px]  border-[2px] dark:bg-gray-900 bg-white  dark:text-white black-color inline-block max-w-full break-words"
                     >
                       <div key={index} className="">
                         <div className="">
@@ -93,9 +92,9 @@ const ServiceCollection = ({ heading }: any) => {
                             <Image
                               src={data?.img}
                               alt=""
-                              className="h-[80px] w-[80px] object-contain"
+                              className="w-[100%] h-[25vh] object-cover rounded-t-[8px]"
                             />
-                            <div className="flex flex-col gap-4">
+                            <div className="flex flex-col gap-4 p-4">
                               <div className="text-[20px] font-semibold">
                                 {data?.service_name}
                               </div>
