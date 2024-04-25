@@ -87,7 +87,7 @@ const ServiceCollection = ({ heading }: any) => {
                       className=" drop-shadow-lg rounded-[8px]  border-[2px] dark:bg-gray-900 bg-white  dark:text-white black-color inline-block max-w-full break-words"
                     >
                       <div key={index} className="">
-                        <div className="">
+                        <Link href={`/academics/${data?.slug}`} className="">
                           <div className="flex flex-col gap-6">
                             <Image
                               src={data?.img}
@@ -103,7 +103,7 @@ const ServiceCollection = ({ heading }: any) => {
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                     </Link>
                   </div>
