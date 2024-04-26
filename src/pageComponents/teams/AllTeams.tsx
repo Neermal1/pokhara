@@ -4,39 +4,39 @@ import { FaPhoneAlt } from "react-icons/fa";
 const AllTeams = () => {
   const teams = [
     {
-      name: "abc",
+      name: "Emma",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TAgOBAeVUHQkdu4gTN28TEEEJuVDwfPKT2KHRkEcjkMGkt3onH7IhN_PDhPrdrtsjC0&usqp=CAU",
+        "https://toppng.com/uploads/preview/kids-school-students-images-png-115533576868gljqduyfu.png",
       phone: "980000000",
-      email: "abc@gmail.com",
+      email: "emma@gmail.com",
     },
     {
-      name: "abc",
+      name: "Sophia",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TAgOBAeVUHQkdu4gTN28TEEEJuVDwfPKT2KHRkEcjkMGkt3onH7IhN_PDhPrdrtsjC0&usqp=CAU",
+        "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlN19waG90b2dyYXBoeV9vZl9oYXBweV9pbmRpYW5fa2lkX3ByaW1hcnlfZWxlbWVudF9mNjg5YjljMC1kZTY3LTQxZGUtOTdlOC0yNTc0ZjNjMzA2MzhfMS5wbmc.png",
       phone: "980000000",
-      email: "abc@gmail.com",
+      email: "sophia@gmail.com",
     },
     {
-      name: "abc",
+      name: "Olivia",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TAgOBAeVUHQkdu4gTN28TEEEJuVDwfPKT2KHRkEcjkMGkt3onH7IhN_PDhPrdrtsjC0&usqp=CAU",
+        "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAzL3Jhd3BpeGVsb2ZmaWNlMTBfcGhvdG9ncmFwaHlfb2ZfaGFwcHlfaW5kaWFuX2tpZF9wcmltYXJ5X2VsZW1lbl84MjU4YjIxZC1mYWY3LTRhY2ItYWEwNy0zZWE5MjI4NTNiYjEucG5n.png",
       phone: "980000000",
-      email: "abc@gmail.com",
+      email: "olivia@gmail.com",
     },
     {
-      name: "abc",
+      name: "Ava",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TAgOBAeVUHQkdu4gTN28TEEEJuVDwfPKT2KHRkEcjkMGkt3onH7IhN_PDhPrdrtsjC0&usqp=CAU",
+        "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8yMl9waG90b2dyYXBoX29mX2FuX2luZGlhbl9naXJsX3dpdGhfYV9iYWNrcGFja181YjYxMjg3NS04NjVhLTRkYTgtYWYzYi05NWQwNTI5ZTdjZmIucG5n.png",
       phone: "980000000",
-      email: "abc@gmail.com",
+      email: "ava@gmail.com",
     },
     {
-      name: "abc",
+      name: "Isabella",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TAgOBAeVUHQkdu4gTN28TEEEJuVDwfPKT2KHRkEcjkMGkt3onH7IhN_PDhPrdrtsjC0&usqp=CAU",
+        "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAzL2ZyZWVpbWFnZXNjb21wYW55X3Bob3RvX29mX3lvdW5nX2luZGlhbl9naXJsX2hvbGRpbmdfc3R1ZGVudF9iYV80NDZhOThmNy03MzA0LTQ2MTctOWJkMy00NzI1ZDc2ZWQ2NTIucG5n.png",
       phone: "980000000",
-      email: "abc@gmail.com",
+      email: "isabella@gmail.com",
     },
   ];
   return (

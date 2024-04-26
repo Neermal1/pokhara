@@ -1,7 +1,7 @@
 import ComponentHeader from "@/components/componentHeader/ComponentHeader";
 import Link from "next/link";
 
-const BlogCard = () => {
+const BlogCard = (title: any) => {
   const BlogImages = [
     {
       img: "https://img.freepik.com/free-photo/happy-young-female-student-holding-notebooks-from-courses-smiling-camera-standing-spring-clothes-against-blue-background_1258-70161.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1713657600&semt=sph",
@@ -20,17 +20,8 @@ const BlogCard = () => {
     },
   ];
   return (
-    <div className="layout component-padding ">
+    <div className="layout component-padding flex flex-col gap-6">
       <div className="flex flex-col gap-10">
-        <div>
-          <ComponentHeader
-            data={{
-              heading: "Latest Blog and Trends",
-              subheading:
-                "Insights from satisfied customers: their feedback tells the story of our quality service and products",
-            }}
-          />
-        </div>
         <div className="grid lg:grid-cols-3 gap-8">
           {BlogImages?.map((data, index) => {
             return (

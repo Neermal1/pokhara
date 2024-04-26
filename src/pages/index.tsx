@@ -1,4 +1,5 @@
 import CallToAction from "@/components/Footer/components/callToAction/CallToAction";
+import ComponentHeader from "@/components/componentHeader/ComponentHeader";
 import CollegeFeature from "@/components/feature/CollegeFeature";
 import OurAssurance from "@/components/ourAssurance/components/OurAssurance";
 import AppLayout from "@/layout/AppLayout";
@@ -25,7 +26,14 @@ const index = () => {
         <ServiceCollection heading={true} />
         <CollegeFeature />
         <Testimonial />
-        <BlogCard />
+        <div className="lg:mt-[100px] mt-[80px]">
+          <ComponentHeader
+            data={{
+              heading: "Latest Blogs and Trends",
+            }}
+          />
+          <BlogCard />
+        </div>
 
         <CallToAction />
       </AppLayout>

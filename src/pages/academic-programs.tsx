@@ -2,6 +2,7 @@ import CallToAction from "@/components/Footer/components/callToAction/CallToActi
 import CollegeFeature from "@/components/feature/CollegeFeature";
 import PageHeader from "@/components/pageHeader/components/PageHeader";
 import AppLayout from "@/layout/AppLayout";
+import CoreValues from "@/pageComponents/AboutUs/components/CoreValues";
 import OurMission from "@/pageComponents/AboutUs/components/OurMission";
 import ServiceCollection from "@/pageComponents/home/ServiceCollection";
 import Metatag from "@/utils/Metatag";
@@ -29,6 +30,7 @@ const AcademicPrograms = () => {
         <ServiceCollection />
         <OurMission />
         <CollegeFeature />
+        <CoreValues />
         <CallToAction />
       </AppLayout>
     </div>
