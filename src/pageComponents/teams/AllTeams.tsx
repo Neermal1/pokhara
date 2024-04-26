@@ -4,37 +4,37 @@ import { FaPhoneAlt } from "react-icons/fa";
 const AllTeams = () => {
   const teams = [
     {
-      name: "Emma",
+      name: "Mr. John Doe",
       image:
-        "https://toppng.com/uploads/preview/kids-school-students-images-png-115533576868gljqduyfu.png",
+        "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
       phone: "980000000",
       email: "emma@gmail.com",
     },
     {
-      name: "Sophia",
+      name: "Mr. Handrick Patel",
       image:
-        "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlN19waG90b2dyYXBoeV9vZl9oYXBweV9pbmRpYW5fa2lkX3ByaW1hcnlfZWxlbWVudF9mNjg5YjljMC1kZTY3LTQxZGUtOTdlOC0yNTc0ZjNjMzA2MzhfMS5wbmc.png",
+        "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg",
       phone: "980000000",
       email: "sophia@gmail.com",
     },
     {
-      name: "Olivia",
+      name: "Ms. Riya Sharma",
       image:
         "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAzL3Jhd3BpeGVsb2ZmaWNlMTBfcGhvdG9ncmFwaHlfb2ZfaGFwcHlfaW5kaWFuX2tpZF9wcmltYXJ5X2VsZW1lbl84MjU4YjIxZC1mYWY3LTRhY2ItYWEwNy0zZWE5MjI4NTNiYjEucG5n.png",
       phone: "980000000",
       email: "olivia@gmail.com",
     },
     {
-      name: "Ava",
+      name: "Ms. Shreya Shapkota",
       image:
-        "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8yMl9waG90b2dyYXBoX29mX2FuX2luZGlhbl9naXJsX3dpdGhfYV9iYWNrcGFja181YjYxMjg3NS04NjVhLTRkYTgtYWYzYi05NWQwNTI5ZTdjZmIucG5n.png",
+        "https://play-lh.googleusercontent.com/t2tJJ3PvHpZwSVH20B7zGBqcqMrUMnNpQ8re_BiS6vqdxboDm_RM_pcJvuRY-n8KvGA=w526-h296-rw",
       phone: "980000000",
       email: "ava@gmail.com",
     },
     {
-      name: "Isabella",
+      name: "Ms. Sharmila Gaikwad",
       image:
-        "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAzL2ZyZWVpbWFnZXNjb21wYW55X3Bob3RvX29mX3lvdW5nX2luZGlhbl9naXJsX2hvbGRpbmdfc3R1ZGVudF9iYV80NDZhOThmNy03MzA0LTQ2MTctOWJkMy00NzI1ZDc2ZWQ2NTIucG5n.png",
+        "https://play-lh.googleusercontent.com/050MUO_KcXxnSjq6V9B4OIbiTGPjv6fxHFhIGNNJsaHj2uld5mwzxO3Uf85Cp6q4Fn2B=w526-h296-rw",
       phone: "980000000",
       email: "isabella@gmail.com",
     },
