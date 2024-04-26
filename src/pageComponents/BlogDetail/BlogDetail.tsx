@@ -89,6 +89,16 @@ const BlogDetail = ({ slug }: any) => {
         </p>
       </div>
 
+      <div className="mt-[120px]">
+        <ComponentHeader
+          data={{
+            heading: "Related Blogs",
+          }}
+        />
+
+        <BlogCard />
+      </div>
+
       <CallToAction />
     </div>
   );
