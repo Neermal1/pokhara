@@ -123,7 +123,7 @@ const Header = () => {
           } bg-white drop-shadow-md py-4 fixed w-full z-50 `}
         >
           <div className="layout lg:px-4 px-6">
-            <div className=" grid lg:grid-cols-12 grid-cols-2 items-center gap-[120px] justify-between ">
+            <div className=" grid lg:grid-cols-12 grid-cols-2 items-center  justify-between ">
               <Link href="/" className=" lg:col-span-2 ">
                 <Image
                   alt="loading"
@@ -157,7 +157,7 @@ const Header = () => {
                   />
                 </Link>
               </div>
-              <div className="hidden lg:flex lg:col-span-2 justify-end">
+              <div className="hidden lg:flex lg:col-span-2  justify-end">
                 <Link href="/" className=" ">
                   <Image
                     alt="loading"
