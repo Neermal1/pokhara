@@ -6,7 +6,7 @@ import Image from "next/image";
 const OurMission = () => {
   return (
     <div className="layout component-padding">
-      <div className="grid lg:grid-cols-2 grid-cols-1">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
         <div className="flex flex-col gap-6">
           <div className="lg:text-[38px] text-[30px] font-semibold">
             Our Mission{" "}

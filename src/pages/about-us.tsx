@@ -8,6 +8,7 @@ import About from "@/pageComponents/AboutUs/components/AboutUs";
 import Testimonial from "@/pageComponents/home/Testimonial";
 import Metatag from "@/utils/Metatag";
 import OurMission from "@/pageComponents/AboutUs/components/OurMission";
+import CoreValues from "@/pageComponents/AboutUs/components/CoreValues";
 
 const AboutUs = () => {
   return (
@@ -30,6 +31,8 @@ const AboutUs = () => {
       <OurMission />
       <CollegeFeature />
       <Testimonial />
+      <CoreValues />
+
       <div className="mt-20">
         <CallToAction />
       </div>

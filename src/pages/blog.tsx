@@ -1,3 +1,4 @@
+import CallToAction from "@/components/Footer/components/callToAction/CallToAction";
 import PageHeader from "@/components/pageHeader/components/PageHeader";
 import AppLayout from "@/layout/AppLayout";
 import BlogCard from "@/pageComponents/Blogs/BlogCard";
@@ -21,6 +22,7 @@ const Blog = () => {
         }}
       />
       <BlogCard />
+      <CallToAction />
     </AppLayout>
   );
 };

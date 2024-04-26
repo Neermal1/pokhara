@@ -1,3 +1,4 @@
+import CallToAction from "@/components/Footer/components/callToAction/CallToAction";
 import PageHeader from "@/components/pageHeader/components/PageHeader";
 import AppLayout from "@/layout/AppLayout";
 import AllTeams from "@/pageComponents/teams/AllTeams";
@@ -21,6 +22,7 @@ const Teams = () => {
         }}
       />
       <AllTeams />
+      <CallToAction />
     </AppLayout>
   );
 };

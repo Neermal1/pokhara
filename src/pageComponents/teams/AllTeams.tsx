@@ -8,35 +8,35 @@ const AllTeams = () => {
       image:
         "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
       phone: "980000000",
-      email: "abc@gmail.com",
+      email: "john@gmail.com",
     },
     {
       name: "Mr. Handrick Patel",
       image:
         "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg",
       phone: "980000000",
-      email: "abc@gmail.com",
+      email: "handrick@gmail.com",
     },
     {
       name: "Ms. Riya Sharma",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TAgOBAeVUHQkdu4gTN28TEEEJuVDwfPKT2KHRkEcjkMGkt3onH7IhN_PDhPrdrtsjC0&usqp=CAU",
+        "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAzL3Jhd3BpeGVsb2ZmaWNlMTBfcGhvdG9ncmFwaHlfb2ZfaGFwcHlfaW5kaWFuX2tpZF9wcmltYXJ5X2VsZW1lbl84MjU4YjIxZC1mYWY3LTRhY2ItYWEwNy0zZWE5MjI4NTNiYjEucG5n.png",
       phone: "980000000",
-      email: "abc@gmail.com",
+      email: "riya@gmail.com",
     },
     {
       name: "Ms. Shreya Shapkota",
       image:
         "https://play-lh.googleusercontent.com/t2tJJ3PvHpZwSVH20B7zGBqcqMrUMnNpQ8re_BiS6vqdxboDm_RM_pcJvuRY-n8KvGA=w526-h296-rw",
       phone: "980000000",
-      email: "abc@gmail.com",
+      email: "shreya@gmail.com",
     },
     {
       name: "Ms. Sharmila Gaikwad",
       image:
         "https://play-lh.googleusercontent.com/050MUO_KcXxnSjq6V9B4OIbiTGPjv6fxHFhIGNNJsaHj2uld5mwzxO3Uf85Cp6q4Fn2B=w526-h296-rw",
       phone: "980000000",
-      email: "abc@gmail.com",
+      email: "sharmila@gmail.com",
     },
   ];
   return (

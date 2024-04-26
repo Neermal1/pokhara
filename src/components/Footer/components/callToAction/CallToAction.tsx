@@ -1,12 +1,11 @@
 import Button from "@/components/button/components/Button";
 import Link from "next/link";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 const CallToAction = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(./images/herosection/banner.jpg)`,
+        backgroundImage: `url(../images/herosection/banner.jpg)`,
         backgroundSize: "cover",
       }}
       className="relative h-[50vh] bg-fixed flex items-center justify-center"

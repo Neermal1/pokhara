@@ -21,7 +21,7 @@ const HeroSection = () => {
                   style={{
                     color: "white",
                   }}
-                  className="before:content-[''] text-[20px]  font-medium  before:bottom-[6px] before:w-[18%] before:lg:h-[8%] before:h-[4%] before:bg-[#eb1425] before:absolute before:left-[30%] before:lg:left-[55%] before:right-0"
+                  className=" text-[20px]  font-medium  mt-12"
                 >
                   Crafting Knowledge, Shaping Futures
                 </div>
