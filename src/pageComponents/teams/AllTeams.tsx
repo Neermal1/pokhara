@@ -4,37 +4,37 @@ import { FaPhoneAlt } from "react-icons/fa";
 const AllTeams = () => {
   const teams = [
     {
-      name: "abc",
+      name: "Mr. John Doe",
+      image:
+        "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
+      phone: "980000000",
+      email: "abc@gmail.com",
+    },
+    {
+      name: "Mr. Handrick Patel",
+      image:
+        "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg",
+      phone: "980000000",
+      email: "abc@gmail.com",
+    },
+    {
+      name: "Ms. Riya Sharma",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TAgOBAeVUHQkdu4gTN28TEEEJuVDwfPKT2KHRkEcjkMGkt3onH7IhN_PDhPrdrtsjC0&usqp=CAU",
       phone: "980000000",
       email: "abc@gmail.com",
     },
     {
-      name: "abc",
+      name: "Ms. Shreya Shapkota",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TAgOBAeVUHQkdu4gTN28TEEEJuVDwfPKT2KHRkEcjkMGkt3onH7IhN_PDhPrdrtsjC0&usqp=CAU",
+        "https://play-lh.googleusercontent.com/t2tJJ3PvHpZwSVH20B7zGBqcqMrUMnNpQ8re_BiS6vqdxboDm_RM_pcJvuRY-n8KvGA=w526-h296-rw",
       phone: "980000000",
       email: "abc@gmail.com",
     },
     {
-      name: "abc",
+      name: "Ms. Sharmila Gaikwad",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TAgOBAeVUHQkdu4gTN28TEEEJuVDwfPKT2KHRkEcjkMGkt3onH7IhN_PDhPrdrtsjC0&usqp=CAU",
-      phone: "980000000",
-      email: "abc@gmail.com",
-    },
-    {
-      name: "abc",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TAgOBAeVUHQkdu4gTN28TEEEJuVDwfPKT2KHRkEcjkMGkt3onH7IhN_PDhPrdrtsjC0&usqp=CAU",
-      phone: "980000000",
-      email: "abc@gmail.com",
-    },
-    {
-      name: "abc",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TAgOBAeVUHQkdu4gTN28TEEEJuVDwfPKT2KHRkEcjkMGkt3onH7IhN_PDhPrdrtsjC0&usqp=CAU",
+        "https://play-lh.googleusercontent.com/050MUO_KcXxnSjq6V9B4OIbiTGPjv6fxHFhIGNNJsaHj2uld5mwzxO3Uf85Cp6q4Fn2B=w526-h296-rw",
       phone: "980000000",
       email: "abc@gmail.com",
     },
