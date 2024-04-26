@@ -5,6 +5,16 @@ const BlogDetail = ({ slug }: any) => {
   return (
     <div className="">
       <div className="max-w-5xl mt-[-45px] mb-10 mx-auto bg-white drop-shadow-md  rounded-[8px] p-8 flex flex-col gap-10">
+        <div className="lg:text-[38px] text-[30px] font-semibold">
+            How To Improve{" "}
+            <span
+              style={{
+                color: "var(--accent-color)",
+              }}
+            >
+              Your Study?
+            </span>
+        </div>
         <div>
           <Image
             src={student1}
@@ -12,7 +22,7 @@ const BlogDetail = ({ slug }: any) => {
             className="w-full h-[50vh] object-cover rounded-[8px]"
           />
         </div>
-        <div className="leading-[25px]">
+        <p className="leading-[25px] text-justify">
           Increasing brain capacity, often referred to as cognitive enhancement
           or cognitive optimization, is a topic that encompasses various
           strategies and techniques aimed at improving cognitive function,
@@ -33,7 +43,9 @@ const BlogDetail = ({ slug }: any) => {
           breathing exercises can reduce stress, improve focus, and enhance
           cognitive function. These techniques have been shown to increase gray
           matter density in brain regions associated with memory, learning, and
-          emotional regulation. Brain Training Programs: There are various brain
+          emotional regulation. 
+          </p>
+          <p className="leading-[25px] text-justify">Brain Training Programs: There are various brain
           training programs and apps designed to exercise different cognitive
           skills such as memory, attention, processing speed, and
           problem-solving. While the efficacy of some of these programs is
@@ -49,7 +61,9 @@ const BlogDetail = ({ slug }: any) => {
           Certain nutrients and dietary supplements have been associated with
           brain health. These include omega-3 fatty acids found in fish oil,
           antioxidants such as vitamins C and E, and other nutrients like B
-          vitamins, magnesium, and zinc. Consuming a well-balanced diet that
+          vitamins, magnesium, and zinc. 
+          </p>
+          <p className="leading-[25px] text-justify">Consuming a well-balanced diet that
           includes these nutrients may support brain function. Quality Sleep:
           Adequate sleep is essential for cognitive function, memory
           consolidation, and overall brain health. Aim for 7-9 hours of quality
@@ -68,7 +82,7 @@ const BlogDetail = ({ slug }: any) => {
           lifestyle and engaging in brain-boosting activities is beneficial not
           only for increasing brain capacity but also for overall well-being and
           quality of life.
-        </div>
+        </p>
       </div>
     </div>
   );
