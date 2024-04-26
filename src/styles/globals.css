@@ -12,5 +12,5 @@
 }
 
 .component-padding {
-  @apply lg:py-[80px] py-[50px] lg:px-4 px-6;
+  @apply lg:py-[80px] py-[75px] lg:px-4 px-6;
 }

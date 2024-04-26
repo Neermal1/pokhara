@@ -6,7 +6,7 @@ import Image from "next/image";
 const Footer = () => {
   const footer_item = [
     {
-      heading: "We are Website",
+      heading: "Know More About Us",
       subHeading: [
         {
           subName: "Home",
@@ -65,17 +65,17 @@ const Footer = () => {
     <div className="dark:bg-[#111827] object-cover  bg-[#EAECEA] drop-shadow-lg color-changer ">
       <div className=" layout component-padding">
         <div className="flex flex-col gap-6">
-          <div className="grid lg:grid-cols-4 gap-10 grid-cols-1 border-b-[2px] pb-8 dark:border-[white]">
+          <div className="grid lg:grid-cols-4 grid-cols-1 border-b-[2px] pb-8 dark:border-[white]">
             <div className="col-span-1">
-              <div className="flex flex-col gap-8">
+              <div className="flex flex-col mb-8">
                 <div>
                   <Image
                     src={logo}
                     alt=""
-                    className=" w-[60px] object-contain  "
+                    className=" w-[150px] object-contain  "
                   />
                 </div>
-                <div className="text-[14px]">
+                <div className="text-[14px] text-justify">
                   Our school is a vibrant community dedicated to nurturing
                   students growth and learning. Its a place where educators are
                   passionate about providing quality education and support,
@@ -143,7 +143,7 @@ const Footer = () => {
                 </div>
               </a>
             </div>
-            <div> ©School 2023, All rights reserved</div>
+            <div> ©School 2024, All rights reserved. Developed By <a href="https://nextaussietech.com/" target="_blank" className="font-semibold underline">Next Aussie Tech</a></div>
           </div>
         </div>
       </div>
