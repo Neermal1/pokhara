@@ -16,6 +16,6 @@
 }
 
 /* Advertisement Popup Modal */
-:where(.css-dev-only-do-not-override-1qfezbu).ant-modal .ant-modal-content{
+.ant-modal-content{
   padding: 0 !important;
 }
