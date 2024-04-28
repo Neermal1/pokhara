@@ -1,9 +1,7 @@
 //Images
 import Button from "@/components/button/components/Button";
 import Link from "next/link";
-import repairtwo from "../../../../public/images/aboutus/reapairtwo.jpg";
 import repairone from "../../../../public/images/aboutus/repairone.jpg";
-import repairthree from "../../../../public/images/aboutus/repairthree.jpg";
 
 //react icons
 
@@ -47,21 +45,8 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="grid lg:grid-cols-12 gap-16">
-          <div className="lg:col-span-7 rounded-[8px] hover:cursor-pointer overflow-hidden">
-            <img
-              src={repairtwo.src}
-              alt=""
-              className=" object-cover hover:scale-110 transition-all duration-700 lg:h-[50vh] 3xl:h-[40vh] w-[100%] rounded-[8px]"
-            />
-          </div>
-          <div className="lg:col-span-5 w-full rounded-[8px] hover:cursor-pointer overflow-hidden">
-            <img
-              src={repairthree.src}
-              alt=""
-              className="lg:h-[50vh] 3xl:h-[40vh] w-[100%] object-cover rounded-[8px] hover:scale-110 transition-all duration-700"
-            />
-          </div>
+        <div>
+          <img src="https://storage.googleapis.com/website-production/uploads/2023/01/audible-banner-ad-example.png" alt="" className="object-cover hover:scale-110 transition-all duration-700 w-[100%] rounded-[8px]" />
         </div>
       </div>
     </div>
