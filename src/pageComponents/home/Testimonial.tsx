@@ -12,14 +12,14 @@ import user from "../../../public/images/testimonial/girlone.jpg";
 const Testimonial = () => {
   const fetchedData = [
     {
-      name: "Louis",
+      name: "Louis Doe",
       position: "Senior Devloper",
       title: "My Journey at College",
       desc: "I can't help but marvel at the milestones I've achieved. From the day I stepped onto campus, I knew I was embarking on a transformative experience. Thanks to the unwavering support of the faculty, the enriching academic environment, and the myriad of opportunities, I've accomplished feats I once only dreamed of. ",
       img: user,
     },
     {
-      name: "Harry",
+      name: "Harry Sharma",
       position: "Senior Engineer",
 
       title: "Empowered by Education: My Story at College",
@@ -28,7 +28,7 @@ const Testimonial = () => {
       img: user,
     },
     {
-      name: "Liam",
+      name: "Liam Patel",
       position: "Senior Doctor",
 
       title: "Finding My Voice at College Name",
@@ -135,8 +135,8 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
                           <div className="flex flex-col gap-5 z-20">
                             <div className="text-[14px]">{data?.desc}</div>
                             <div>
-                              <div>{data?.name}</div>
-                              <div className="text-[12px] ">
+                              <div className="font-semibold">{data?.name}</div>
+                              <div className="text-[12px] font-semibold">
                                 {data?.position}
                               </div>
                             </div>
