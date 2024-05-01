@@ -60,7 +60,7 @@ const Header = () => {
         {/* Top Header */}
 
         {topHeader && (
-          <div className="bg-[#eb1425] text-white relative ">
+          <div className="bg-[#183153] text-white relative ">
             <div className="layout py-2 lg:px-4 px-6">
               <div className="flex lg:flex-row flex-col lg:gap-4 gap-2 justify-between items-center">
                 <div className="flex lg:flex-row flex-col gap-4">
