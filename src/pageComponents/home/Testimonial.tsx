@@ -48,7 +48,7 @@ const Testimonial = () => {
           onClick={() => previous()}
           className="cursor-pointer transition-all p-3 drop-shadow-md rounded-[2px]  px-6 py-2  bg-[#183153]
 
- hover:brightness-110 hover:-translate-y-[1px]
+ hover:brightness-110 hover:-translate-y-[1px] hover:bg-[#ef1a26]
 active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
         >
           <FaArrowLeftLong className="text-white" />
@@ -58,7 +58,7 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
           onClick={() => next()}
           className="cursor-pointer transition-all p-3 drop-shadow-md rounded-[2px]  px-6 py-2  bg-[#183153]
 
- hover:brightness-110 hover:-translate-y-[1px]
+ hover:brightness-110 hover:-translate-y-[1px] hover:bg-[#ef1a26]
 active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
         >
           <FaArrowRightLong className="text-white" />
