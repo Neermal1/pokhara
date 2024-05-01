@@ -20,7 +20,7 @@ const CompanySuccess = () => {
             data-aos-delay="75"
             data-aos-duration="1000"
           >
-            <div className="lg:text-[58px] text-[38px] font-semibold text-[#eb1425]">
+            <div className="lg:text-[58px] text-[38px] font-semibold text-[#ef1a26]">
               60 +
             </div>
             <div className="lg:text-[20px] text-[18px] font-medium lg:translate-x-[5px]">
@@ -33,7 +33,7 @@ const CompanySuccess = () => {
             data-aos-delay="75"
             data-aos-duration="1000"
           >
-            <div className="lg:text-[58px] text-[38px] font-semibold text-[#eb1425]">
+            <div className="lg:text-[58px] text-[38px] font-semibold text-[#ef1a26]">
               20+
             </div>
             <div className="lg:text-[20px] text-[18px] font-medium lg:translate-x-[5px]">
@@ -46,7 +46,7 @@ const CompanySuccess = () => {
             data-aos-delay="75"
             data-aos-duration="1000"
           >
-            <div className="lg:text-[58px] text-[38px] font-semibold text-[#eb1425]">
+            <div className="lg:text-[58px] text-[38px] font-semibold text-[#ef1a26]">
               200 +
             </div>
             <div className="lg:text-[20px] text-[18px] font-medium lg:translate-x-[5px]">
@@ -59,7 +59,7 @@ const CompanySuccess = () => {
             data-aos-delay="75"
             data-aos-duration="1000"
           >
-            <div className="lg:text-[58px] text-[38px] font-semibold text-[#eb1425]">
+            <div className="lg:text-[58px] text-[38px] font-semibold text-[#ef1a26]">
               10+
             </div>
             <div className="lg:text-[20px] text-[18px] font-medium lg:translate-x-[5px]">

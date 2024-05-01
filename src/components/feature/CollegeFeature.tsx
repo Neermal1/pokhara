@@ -43,7 +43,7 @@ const CollegeFeature = () => {
                       </div>
                       <div>{data?.description}</div>
                       <div className="absolute top-[-30px] right-10 group-hover:animate-spin">
-                        <div className="border-[2px] h-[60px] w-[60px] border-[#eb1425] group-hover:bg-[white] group-hover:text-[#eb1425] bg-[#16111D] rounded-full flex items-center justify-center">
+                        <div className="border-[2px] h-[60px] w-[60px] border-[#ef1a26] group-hover:bg-[white] group-hover:text-[#ef1a26] bg-[#16111D] rounded-full flex items-center justify-center">
                           <div className="text-[24px]">0{index + 1}</div>
                         </div>
                       </div>
