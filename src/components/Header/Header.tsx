@@ -26,7 +26,7 @@ const Header = () => {
   const [subMenu, setSubMenu] = useState<boolean>(false);
   const router = useRouter();
   const { pathname } = router;
-
+  console.log("This is ", pathname);
   const header_items = HeaderItem();
 
   // Top Header Function
@@ -150,10 +150,12 @@ const Header = () => {
                           {data?.name}
                         </div>
                       </div>
+
                       <div
                         className={`${
-                          pathname == data?.slug &&
-                          "absolute w-[100%] h-[2px]  z-0  bottom-[-10px] left-0 right-0 rounded-[2px]  bg-secondary"
+                          (pathname === data?.slug ||
+                            pathname.startsWith(data?.slug + "/")) &&
+                          "absolute w-[100%] h-[2px] z-0 bottom-[-10px] left-0 right-0 rounded-[2px] bg-secondary"
                         }`}
                       ></div>
 
