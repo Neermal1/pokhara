@@ -77,7 +77,7 @@ const ServiceCollection = ({ heading }: any) => {
             <div className="grid lg:grid-cols-3 grid-cols-1 gap-20">
               {serviceList?.map((data, index: number) => {
                 return (
-                  <div className="z-20" key={index}>
+                  <div className="z-20 hover:-translate-y-[5px]" key={index}>
                     <Link
                       data-aos="fade-up"
                       data-aos-delay="75"
