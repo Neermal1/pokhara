@@ -24,7 +24,7 @@ const CallToAction = () => {
           </div>
 
           <Link href="/contact-us">
-          <div className="text-white inline-block cursor-pointer transition-all p-3 drop-shadow-md rounded-[2px]  px-6 py-2  bg-[#632115]
+          <div className="text-white inline-block cursor-pointer transition-all p-3 drop-shadow-md rounded-[10px]  px-6 py-2  bg-[#632115]
           hover:brightness-110 hover:-translate-y-[3px] hover:bg-[#d27785]
           active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
             Contact Us
