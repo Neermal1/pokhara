@@ -28,9 +28,6 @@ const AcademicPrograms = () => {
           }}
         />
         <ServiceCollection />
-        <OurMission />
-        <CollegeFeature />
-        <CoreValues />
         <CallToAction />
       </AppLayout>
     </div>
