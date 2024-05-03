@@ -134,7 +134,7 @@ const Header = () => {
               <div className=" lg:flex justify-center items-center hidden lg:col-span-8  gap-[30px]">
                 {header_items.map((data: any, index) => {
                   return (
-                    <div key={index} className="hover:-translate-y-[1px] hover:text-[#632115]">
+                    <div key={index} className="transition-all hover:-translate-y-[1px] hover:text-[#632115]">
                       <div>
                         <Link
                           href={`${data?.subcategories ? "#" : data?.slug}`}
