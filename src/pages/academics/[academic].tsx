@@ -80,7 +80,7 @@ const AcademicPrograms = () => {
             <div className="lg:col-span-3 sticky top-[140px]">
               <div className="">
                 <div className="bg-white  drop-shadow-md p-4 flex flex-col gap-6">
-                  <div className="text-[22px]">Related Academics</div>
+                  <div className="text-[22px] font-bold text-[#d27785]">Related Academics</div>
                   <div className="flex flex-col gap-4  ">
                     <Link href="/academics/tutoring-center" className="transition-all p-2 drop-shadow-md rounded-[10px]  px-6 py-1 hover:-translate-y-[3px] hover:text-[#632115]
                     active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
