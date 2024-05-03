@@ -48,7 +48,7 @@ const AllTeams = () => {
               <div className="">
                 <div className=" product-card w-[300px] rounded-md shadow-xl overflow-hidden z-[10] relative cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group">
                   <div className="absolute -left-[40%] top-0 group-hover:rotate-12 transition-all duration-300 group-hover:scale-150"></div>
-                  <div className="absolute rounded-full bg-[#dee6f5] z-20 left-1/2 top-[44%] h-[110%] w-[110%] -translate-x-1/2 group-hover:top-[58%] transition-all duration-300"></div>
+                  <div className="absolute rounded-full bg-[#d27785] z-20 left-1/2 top-[44%] h-[110%] w-[110%] -translate-x-1/2 group-hover:top-[58%] transition-all duration-300"></div>
                   <div className="para uppercase text-center leading-none z-40">
                     <div className="text-[20px] font-medium mb-4 h-[25px]">
                       {data?.name}
