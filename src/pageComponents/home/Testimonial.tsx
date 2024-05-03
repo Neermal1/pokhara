@@ -46,9 +46,9 @@ const Testimonial = () => {
       >
         <div
           onClick={() => previous()}
-          className="cursor-pointer transition-all p-3 drop-shadow-md rounded-[2px]  px-6 py-2  bg-[#183153]
+          className="cursor-pointer transition-all p-3 drop-shadow-md rounded-[2px]  px-6 py-2  bg-[#632115]
 
- hover:brightness-110 hover:-translate-y-[1px] hover:bg-[#ef1a26]
+ hover:brightness-110 hover:-translate-y-[1px] hover:bg-[#d27785]
 active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
         >
           <FaArrowLeftLong className="text-white" />
@@ -56,9 +56,9 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
 
         <div
           onClick={() => next()}
-          className="cursor-pointer transition-all p-3 drop-shadow-md rounded-[2px]  px-6 py-2  bg-[#183153]
+          className="cursor-pointer transition-all p-3 drop-shadow-md rounded-[2px]  px-6 py-2  bg-[#632115]
 
- hover:brightness-110 hover:-translate-y-[1px] hover:bg-[#ef1a26]
+ hover:brightness-110 hover:-translate-y-[1px] hover:bg-[#d27785]
 active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
         >
           <FaArrowRightLong className="text-white" />
@@ -113,7 +113,7 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
                             alt=""
                             className="z-0 rounded-[8px]"
                           />
-                          <div className="absolute group-hover:bg-[#ef1a26] text-white bg-[#183153] drop-shadow-lg top-[-22px] z-50 lg:right-[-20px] right-[2px] h-[40px] w-[40px] lg:h-[60px] lg:w-[60px] rounded-full flex items-center justify-center">
+                          <div className="absolute group-hover:bg-[#d27785] text-white bg-[#632115] drop-shadow-lg top-[-22px] z-50 lg:right-[-20px] right-[2px] h-[40px] w-[40px] lg:h-[60px] lg:w-[60px] rounded-full flex items-center justify-center">
                             <RiDoubleQuotesR
                               size={26}
                               className=" font-semibold text-white"

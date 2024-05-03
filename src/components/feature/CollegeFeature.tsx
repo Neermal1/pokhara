@@ -19,7 +19,7 @@ const CollegeFeature = () => {
     },
   ];
   return (
-    <div className="bg-[#16111D] text-white">
+    <div className="bg-[#632115] text-white">
       <div className="layout component-padding">
         <div className=" white-color ">
           <div className=" flex flex-col gap-20">
@@ -34,7 +34,7 @@ const CollegeFeature = () => {
                   return (
                     <div
                       key={index}
-                      className="border-[1px] relative group border-[white] p-6 rounded-[8px] flex flex-col gap-8"
+                      className="border-[1px] relative group border-[#d27785] p-6 rounded-[8px] flex flex-col gap-8"
                     >
                       <div className="flex items-center gap-4">
                         <div className="text-[20px] font-semibold">
@@ -43,7 +43,7 @@ const CollegeFeature = () => {
                       </div>
                       <div>{data?.description}</div>
                       <div className="absolute top-[-30px] right-10 group-hover:animate-spin">
-                        <div className="border-[2px] h-[60px] w-[60px] border-[#ef1a26] group-hover:bg-[white] group-hover:text-[#ef1a26] bg-[#16111D] rounded-full flex items-center justify-center">
+                        <div className="border-[2px] h-[60px] w-[60px] border-[#d27785] group-hover:bg-[white] group-hover:text-[#d27785] bg-[#632115] rounded-full flex items-center justify-center">
                           <div className="text-[24px]">0{index + 1}</div>
                         </div>
                       </div>

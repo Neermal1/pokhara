@@ -60,7 +60,7 @@ const Header = () => {
         {/* Top Header */}
 
         {topHeader && (
-          <div className="bg-[#183153] text-white relative ">
+          <div className="bg-[#632115] text-white relative ">
             <div className="layout py-2 lg:px-4 px-6">
               <div className="flex lg:flex-row flex-col lg:gap-4 gap-2 justify-between items-center">
                 <div className="flex lg:flex-row flex-col gap-4">
@@ -70,7 +70,7 @@ const Header = () => {
                         <FaPhoneAlt />
                       </div>
                       <div>
-                        <a href={`tel:789456123`}>78945113</a>
+                        <a href={`tel:789456123`}>+977-78945113</a>
                       </div>
                     </div>
                     <div className="flex gap-[4px] items-center text-[12px]">
@@ -78,7 +78,7 @@ const Header = () => {
                         <FaPhoneAlt />
                       </div>
                       <div>
-                        <a href={`tel:789456123`}>789456123</a>
+                        <a href={`tel:789456123`}>+977-789456123</a>
                       </div>
                     </div>
                   </div>
@@ -88,7 +88,7 @@ const Header = () => {
                     </div>
                     <div>
                       <a href={`mailto:abc@gmail.com`} className="">
-                        abc@gmail.com
+                        info@peacezone.com
                       </a>
                     </div>
                   </div>
@@ -134,11 +134,11 @@ const Header = () => {
               <div className=" lg:flex justify-center items-center hidden lg:col-span-8  gap-[30px]">
                 {header_items.map((data: any, index) => {
                   return (
-                    <div key={index} className="">
+                    <div key={index} className="hover:-translate-y-[1px] hover:text-[#632115]">
                       <div>
                         <Link
                           href={`${data?.subcategories ? "#" : data?.slug}`}
-                          className={`text-[14px] font-semibold`}
+                          className={`text-[14px] font-semibold uppercase`}
                         >
                           {data?.name}
                         </Link>
@@ -150,11 +150,11 @@ const Header = () => {
                   href={`/contact-us`}
                   className="flex items-center justify-center"
                 >
-                  <Button
-                    data={{
-                      name: "Contact Us",
-                    }}
-                  />
+                  <div className="text-white inline-block cursor-pointer transition-all p-3 drop-shadow-md rounded-[10px]  px-6 py-2  bg-[#632115]
+                  hover:brightness-110 hover:-translate-y-[3px] hover:bg-[#d27785]
+                  active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+                    Contact Us
+                  </div>
                 </Link>
               </div>
               <div className="hidden lg:flex lg:col-span-2  justify-end">

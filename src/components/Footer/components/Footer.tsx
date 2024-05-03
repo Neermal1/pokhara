@@ -112,7 +112,7 @@ const Footer = () => {
             <div className="flex gap-4 items-center justify-center">
               <a
                 href="/https://www.facebook.com/"
-                className="border-[1px] p-3 rounded-full h-[20px] w-[20px] hover:dark:border-[#ef1a26]  dark:border-white border-[#292f32] flex items-center justify-center"
+                className="border-[1px] p-3 rounded-full h-[20px] w-[20px] hover:dark:border-[#d27785]  dark:border-white border-[#292f32] flex items-center justify-center"
               >
                 <div>
                   <FaFacebookF size={12} />
@@ -120,7 +120,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://twittter.com/"
-                className="border-[1px] p-3 rounded-full h-[20px] w-[20px] hover:dark:border-[#ef1a26] dark:border-white border-[#292f32] flex items-center justify-center"
+                className="border-[1px] p-3 rounded-full h-[20px] w-[20px] hover:dark:border-[#d27785] dark:border-white border-[#292f32] flex items-center justify-center"
               >
                 <div>
                   <FaXTwitter size={12} />
@@ -128,7 +128,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.instagram.com/"
-                className="border-[1px] p-3 rounded-full h-[20px] w-[20px] hover:dark:border-[#ef1a26] dark:border-white border-[#292f32] flex items-center justify-center"
+                className="border-[1px] p-3 rounded-full h-[20px] w-[20px] hover:dark:border-[#d27785] dark:border-white border-[#292f32] flex items-center justify-center"
               >
                 <div>
                   <FaInstagram size={12} />
@@ -136,7 +136,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://youtube.com/"
-                className="border-[1px] p-3 rounded-full h-[20px] w-[20px] hover:dark:border-[#ef1a26]  dark:border-white border-[#292f32] flex items-center justify-center"
+                className="border-[1px] p-3 rounded-full h-[20px] w-[20px] hover:dark:border-[#d27785]  dark:border-white border-[#292f32] flex items-center justify-center"
               >
                 <div>
                   <FaYoutube size={12} />

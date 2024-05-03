@@ -4,7 +4,7 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  background: #183153;
+  background: #632115;
  z-index: 20;
   overflow: hidden;
   cursor: pointer;
@@ -15,7 +15,7 @@ button {
     content: " ";
     width: 0%;
     height: 100%;
-    background-color: #ef1a26;
+    background-color: #d27785;
     position: absolute;
     transition: all 0.4s ease-in-out;
     right: 0;
@@ -41,7 +41,7 @@ button {
   }
   
   button:hover span {
-    color: #183153;
+    color: #632115;
     animation: scaleUp 0.3s ease-in-out;
   }
   
