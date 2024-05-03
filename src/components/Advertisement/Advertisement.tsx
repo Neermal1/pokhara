@@ -27,7 +27,7 @@ const Advertisement = () => {
           <Image
             src={school}
             alt="loading"
-            className="object-cover rounded-[8px]  w-[100%]"
+            className="object-cover rounded-[8px] w-[100%]"
           ></Image>
         </div>
       </Modal>

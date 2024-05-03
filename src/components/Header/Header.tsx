@@ -18,11 +18,14 @@ import { MdEmail } from "react-icons/md";
 import Button from "../button/components/Button";
 import Image from "next/image";
 import { Drawer } from "antd";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const [topHeader, setTopHeader] = useState<boolean>(true);
   const [activeMenu, setActiveMenu] = useState<string>("");
   const [subMenu, setSubMenu] = useState<boolean>(false);
+  const router = useRouter();
+  const { pathname } = router;
 
   const header_items = HeaderItem();
 
@@ -134,25 +137,39 @@ const Header = () => {
               <div className=" lg:flex justify-center items-center hidden lg:col-span-8  gap-[30px]">
                 {header_items.map((data: any, index) => {
                   return (
-                    <div key={index} className="transition-all hover:-translate-y-[2px] hover:text-[#632115]">
+                    <Link
+                      href={`${data?.subcategories ? "#" : data?.slug}`}
+                      key={index}
+                      className="transition-all relative group hover:-translate-y-[2px] hover:text-[#632115]"
+                    >
                       <div>
-                        <Link
-                          href={`${data?.subcategories ? "#" : data?.slug}`}
+                        <div
+                          // href={`${data?.subcategories ? "#" : data?.slug}`}
                           className={`text-[14px] font-semibold uppercase`}
                         >
                           {data?.name}
-                        </Link>
+                        </div>
                       </div>
-                    </div>
+                      <div
+                        className={`${
+                          pathname == data?.slug &&
+                          "absolute w-[100%] h-[2px]  z-0  bottom-[-10px] left-0 right-0 rounded-[2px]  bg-secondary"
+                        }`}
+                      ></div>
+
+                      <div className="absolute w-[10%] h-[2px] transition-all duration-500 group-hover:w-[100%]  z-0  bottom-[-10px] left-0 right-0 rounded-[2px]  group-hover:bg-secondary "></div>
+                    </Link>
                   );
                 })}
                 <Link
                   href={`/contact-us`}
                   className="flex items-center justify-center"
                 >
-                  <div className="text-white inline-block cursor-pointer transition-all p-3 drop-shadow-md rounded-[10px]  px-6 py-2  bg-[#632115]
+                  <div
+                    className="text-white inline-block cursor-pointer transition-all p-3 drop-shadow-md rounded-[10px]  px-6 py-2  bg-[#632115]
                   hover:brightness-110 hover:-translate-y-[3px] hover:bg-[#d27785]
-                  active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+                  active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
+                  >
                     Contact Us
                   </div>
                 </Link>

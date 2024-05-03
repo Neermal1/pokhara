@@ -79,13 +79,13 @@ const AcademicPrograms = () => {
                 <div className="bg-white  drop-shadow-md p-4 flex flex-col gap-6">
                   <div className="text-[22px]">Related Academics</div>
                   <div className="flex flex-col gap-4  ">
-                    <Link href="/academics/tutoring-center">
+                    <Link href="/academic-programs/tutoring-center">
                       Tutoring Center
                     </Link>
-                    <Link href="/academics/career-services">
+                    <Link href="/academic-programs/career-services">
                       Career Services
                     </Link>
-                    <Link href="/academics/disability-support-services">
+                    <Link href="/academic-programs/disability-support-services">
                       Disability Support Services
                     </Link>
                   </div>

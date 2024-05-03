@@ -77,18 +77,20 @@ const ServiceCollection = ({ heading }: any) => {
             <div className="grid lg:grid-cols-3 grid-cols-1 gap-20">
               {serviceList?.map((data, index: number) => {
                 return (
-                  <div className="z-20 transition-all drop-shadow-md rounded-[10px] hover:brightness-110 hover:-translate-y-[3px]
-                  active:border-b-[2px] active:brightness-90 active:translate-y-[2px]" key={index}>
+                  <div
+                    className="z-20 transition-all drop-shadow-md rounded-[10px] hover:brightness-110 hover:-translate-y-[3px]
+                  active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
+                    key={index}
+                  >
                     <Link
                       data-aos="fade-up"
                       data-aos-delay="75"
                       data-aos-duration="1000"
-                      // href={`/academic-programs/${data?.slug}`}
-                      href="#"
+                      href={`/academic-programs/${data?.slug}`}
                       className=" drop-shadow-lg rounded-[8px]  border-[2px] dark:bg-gray-900 bg-white  dark:text-white black-color inline-block max-w-full break-words"
                     >
                       <div key={index} className="">
-                        <Link href={`/academics/${data?.slug}`} className="">
+                        <div className="">
                           <div className="flex flex-col gap-6">
                             <Image
                               src={data?.img}
@@ -104,7 +106,7 @@ const ServiceCollection = ({ heading }: any) => {
                               </div>
                             </div>
                           </div>
-                        </Link>
+                        </div>
                       </div>
                     </Link>
                   </div>
