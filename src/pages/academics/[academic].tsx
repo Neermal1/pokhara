@@ -28,7 +28,7 @@ const AcademicPrograms = () => {
         <div className="layout component-padding">
           <div className="grid lg:grid-cols-8 gap-20 items-start">
             <div className="lg:col-span-5 flex flex-col gap-10">
-              <div className="text-[30px] font-semibold">
+              <div className="text-[30px] font-semibold text-[#d27785]">
                 Academics Advising
               </div>
               <div>
@@ -38,7 +38,10 @@ const AcademicPrograms = () => {
                   className="w-full h-[45vh] object-cover rounded-[8px]"
                 />
               </div>
-              <div className="">
+              <div className="text-[25px] font-bold text-[#d27785]">
+                Overview
+              </div>
+              <div>
                 Within educational institutions, academic programs form the
                 cornerstone of the learning experience. These programs, tailored
                 to the needs of students at various stages of their educational
@@ -79,13 +82,16 @@ const AcademicPrograms = () => {
                 <div className="bg-white  drop-shadow-md p-4 flex flex-col gap-6">
                   <div className="text-[22px]">Related Academics</div>
                   <div className="flex flex-col gap-4  ">
-                    <Link href="/academics/tutoring-center">
+                    <Link href="/academics/tutoring-center" className="transition-all p-2 drop-shadow-md rounded-[10px]  px-6 py-1 hover:-translate-y-[3px] hover:text-[#632115]
+                    active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
                       Tutoring Center
                     </Link>
-                    <Link href="/academics/career-services">
+                    <Link href="/academics/career-services" className="transition-all p-2 drop-shadow-md rounded-[10px]  px-6 py-1 hover:-translate-y-[3px] hover:text-[#632115]
+                    active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
                       Career Services
                     </Link>
-                    <Link href="/academics/disability-support-services">
+                    <Link href="/academics/disability-support-services" className="transition-all p-2 drop-shadow-md rounded-[10px]  px-6 py-1 hover:-translate-y-[3px] hover:text-[#632115]
+                    active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
                       Disability Support Services
                     </Link>
                   </div>
