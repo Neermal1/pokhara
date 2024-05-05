@@ -30,8 +30,8 @@ const AboutUs = () => {
       <About />
       <OurMission />
       <CollegeFeature />
-      <Testimonial />
       <CoreValues />
+      <Testimonial />
 
       <div className="mt-20">
         <CallToAction />
