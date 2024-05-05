@@ -26,7 +26,6 @@ const Header = () => {
   const [subMenu, setSubMenu] = useState<boolean>(false);
   const router = useRouter();
   const { pathname } = router;
-  console.log("This is ", pathname);
   const header_items = HeaderItem();
 
   // Top Header Function
@@ -63,7 +62,7 @@ const Header = () => {
         {/* Top Header */}
 
         {topHeader && (
-          <div className="bg-[#632115] text-white relative ">
+          <div className="bg-[#632115] text-white relative z-50">
             <div className="layout py-2 lg:px-4 px-6">
               <div className="flex lg:flex-row flex-col lg:gap-4 gap-2 justify-between items-center">
                 <div className="flex lg:flex-row flex-col gap-4">
@@ -96,24 +95,37 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="flex  lg:gap-8 gap-4 lg:justify-start justify-center lg:items-start items-center">
-                  <div className="flex gap-4 items-center">
-                    <a href="#" target="__blank">
-                      <FaFacebookF size={16} />
-                    </a>
+                  <Link
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    className=""
+                  >
+                    <FaFacebookF className="h-[2vh] w-[2vh]" />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    className=""
+                  >
+                    <FaSquareInstagram size={16} />
+                  </Link>
+                  <Link
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    className=" hover:cursor-pointer"
+                  >
+                    <IoLogoYoutube size={18} />
+                  </Link>
 
-                    <a href="#" target="__blank">
-                      <FaSquareInstagram size={16} />
-                    </a>
-
-                    <a href="#" target="__blank">
-                      <IoLogoYoutube size={18} />
-                    </a>
-
-                    <a href="#" target="__blank">
-                      <FaXTwitter size={18} />
-                    </a>
-                  </div>
+                  <Link
+                    href="https://twitter.com/"
+                    target="_blank"
+                    className=" hover:cursor-pointer"
+                  >
+                    <FaXTwitter size={18} />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -143,10 +155,7 @@ const Header = () => {
                       className="transition-all relative group hover:-translate-y-[2px] hover:text-[#632115]"
                     >
                       <div>
-                        <div
-                          // href={`${data?.subcategories ? "#" : data?.slug}`}
-                          className={`text-[14px] font-semibold uppercase`}
-                        >
+                        <div className={`text-[14px] font-semibold uppercase`}>
                           {data?.name}
                         </div>
                       </div>
