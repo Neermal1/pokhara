@@ -46,7 +46,7 @@ const About = () => {
           </div>
         </div>
         <div>
-          <img src="https://www.pollfish.com/wp-content/uploads/2017/12/Mobile_AD_FORMATS3-1.png" alt="" className="object-cover hover:scale-110 transition-all duration-700 w-[100%] rounded-[8px]" />
+          <img src="https://storage.googleapis.com/website-production/uploads/2023/01/audible-banner-ad-example.png" alt="" className="object-cover hover:scale-110 transition-all duration-700 w-[100%] rounded-[8px]" />
         </div>
       </div>
     </div>
