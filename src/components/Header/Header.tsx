@@ -98,19 +98,19 @@ const Header = () => {
                 </div>
                 <div className="flex  lg:gap-8 gap-4 lg:justify-start justify-center lg:items-start items-center">
                   <div className="flex gap-4 items-center">
-                    <a href="#" target="__blank">
+                    <a href="/https://www.facebook.com/" target="__blank" className="transition-all relative group hover:-translate-y-[2px]">
                       <FaFacebookF size={16} />
                     </a>
 
-                    <a href="#" target="__blank">
+                    <a href="#" target="__blank" className="transition-all relative group hover:-translate-y-[2px]">
                       <FaSquareInstagram size={16} />
                     </a>
 
-                    <a href="#" target="__blank">
+                    <a href="#" target="__blank" className="transition-all relative group hover:-translate-y-[2px]">
                       <IoLogoYoutube size={18} />
                     </a>
 
-                    <a href="#" target="__blank">
+                    <a href="#" target="__blank" className="transition-all relative group hover:-translate-y-[2px]">
                       <FaXTwitter size={18} />
                     </a>
                   </div>
