@@ -100,21 +100,21 @@ const Header = () => {
                   <Link
                     href="https://www.facebook.com/"
                     target="_blank"
-                    className=""
+                    className="transition-all relative group hover:-translate-y-[2px]"
                   >
                     <FaFacebookF className="h-[2vh] w-[2vh]" />
                   </Link>
                   <Link
                     href="https://www.instagram.com/"
                     target="_blank"
-                    className=""
+                    className="transition-all relative group hover:-translate-y-[2px]"
                   >
                     <FaSquareInstagram size={16} />
                   </Link>
                   <Link
                     href="https://www.youtube.com/"
                     target="_blank"
-                    className=" hover:cursor-pointer"
+                    className="transition-all relative group hover:-translate-y-[2px]"
                   >
                     <IoLogoYoutube size={18} />
                   </Link>
@@ -122,7 +122,7 @@ const Header = () => {
                   <Link
                     href="https://twitter.com/"
                     target="_blank"
-                    className=" hover:cursor-pointer"
+                    className="transition-all relative group hover:-translate-y-[2px]"
                   >
                     <FaXTwitter size={18} />
                   </Link>
