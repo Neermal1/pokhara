@@ -14,6 +14,7 @@ import logo2 from "../../../public/images/logo/logo2.jpg";
 //antd
 import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
+import { GrLocation } from "react-icons/gr";
 import { MdEmail } from "react-icons/md";
 import Button from "../button/components/Button";
 import Image from "next/image";
@@ -67,7 +68,7 @@ const Header = () => {
               <div className="flex lg:flex-row flex-col lg:gap-4 gap-2 justify-between items-center">
                 <div className="flex lg:flex-row flex-col gap-4">
                   <div className="flex items-center gap-4">
-                    <div className="flex gap-[4px] items-center text-[12px]">
+                    <div className="flex gap-[4px] items-center text-[12px] transition-all relative group hover:-translate-y-[2px]">
                       <div>
                         <FaPhoneAlt />
                       </div>
@@ -75,16 +76,16 @@ const Header = () => {
                         <a href={`tel:789456123`}>+977-78945113</a>
                       </div>
                     </div>
-                    <div className="flex gap-[4px] items-center text-[12px]">
+                    <div className="flex gap-[4px] items-center text-[12px] transition-all relative group hover:-translate-y-[2px]">
                       <div>
-                        <FaPhoneAlt />
+                        <GrLocation />
                       </div>
                       <div>
-                        <a href={`tel:789456123`}>+977-789456123</a>
+                        <a href={`tel:789456123`}>Pokhara, Nepal</a>
                       </div>
                     </div>
                   </div>
-                  <div className="flex gap-[4px] lg:justify-start justify-center items-center text-[12px]">
+                  <div className="flex gap-[4px] lg:justify-start justify-center items-center text-[12px] transition-all relative group hover:-translate-y-[2px]">
                     <div>
                       <MdEmail size={14} />
                     </div>
