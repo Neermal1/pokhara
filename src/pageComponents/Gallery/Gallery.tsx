@@ -18,7 +18,7 @@ const Gallery = ({ galleryCollection }: any) => {
 
   return (
     <div className="layout component-padding">
-      <div className="grid lg:grid-cols-4 grid-cols-1 gap-10">
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-10">
         {galleryCollection?.map((data: any, index: any) => {
           return (
             <div key={data?.id}>
