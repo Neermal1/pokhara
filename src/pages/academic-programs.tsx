@@ -1,3 +1,4 @@
+import Calendar from "@/components/Calendar/Calendar";
 import CallToAction from "@/components/Footer/components/callToAction/CallToAction";
 import PageHeader from "@/components/pageHeader/components/PageHeader";
 import { SSR_fetchData } from "@/helperfunctions/fetchData.helper";
@@ -25,6 +26,7 @@ const AcademicPrograms = ({ academicProgram }: any) => {
               " Whether it's a minor fix or a major overhaul, trust us to restore your appliances to optimal functionality, providing you with peace of mind and convenience at every step.",
           }}
         />
+        <Calendar />
         <ServiceCollection data={academicProgram} />
         <CallToAction />
       </AppLayout>

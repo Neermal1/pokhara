@@ -5,6 +5,7 @@ import Metatag from "@/utils/Metatag";
 import CallToAction from "@/components/Footer/components/callToAction/CallToAction";
 import { SSR_fetchData } from "@/helperfunctions/fetchData.helper";
 import Link from "next/link";
+import Calendar from "@/components/Calendar/Calendar";
 
 const AcademicPrograms = ({ data }: any) => {
   return (
@@ -24,6 +25,7 @@ const AcademicPrograms = ({ data }: any) => {
             title: data?.detail?.title,
           }}
         />
+        <Calendar />
         <div className="layout component-padding">
           <div className="grid lg:grid-cols-8 gap-20 items-start">
             <div className="lg:col-span-5 flex flex-col gap-10">

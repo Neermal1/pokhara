@@ -1,3 +1,4 @@
+import Calendar from "@/components/Calendar/Calendar";
 import PageHeader from "@/components/pageHeader/components/PageHeader";
 import { SSR_fetchData } from "@/helperfunctions/fetchData.helper";
 import AppLayout from "@/layout/AppLayout";
@@ -26,6 +27,7 @@ const GalleryDetail = ({ galleryDetail, slug }: any) => {
               }),
           }}
         />
+        <Calendar />
         <Gallery galleryCollection={galleryDetail} />
       </AppLayout>
     </div>

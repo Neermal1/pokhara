@@ -1,3 +1,4 @@
+import Calendar from "@/components/Calendar/Calendar";
 import CallToAction from "@/components/Footer/components/callToAction/CallToAction";
 import PageHeader from "@/components/pageHeader/components/PageHeader";
 import { SSR_fetchData } from "@/helperfunctions/fetchData.helper";
@@ -22,6 +23,7 @@ const Blog = ({ blogs }: any) => {
           title: "Blog",
         }}
       />
+      <Calendar />
       <BlogCard data={blogs} />
       <CallToAction />
     </AppLayout>

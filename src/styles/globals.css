@@ -19,3 +19,17 @@
 .ant-modal-content{
   padding: 0 !important;
 }
+
+/* webkit scrollbar  */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 4px;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  max-height: 12px;
+  height: 4px;
+}

@@ -1,4 +1,5 @@
 import Advertisement from "@/components/Advertisement/Advertisement";
+import Calendar from "@/components/Calendar/Calendar";
 import CallToAction from "@/components/Footer/components/callToAction/CallToAction";
 import ComponentHeader from "@/components/componentHeader/ComponentHeader";
 import CollegeFeature from "@/components/feature/CollegeFeature";
@@ -30,6 +31,7 @@ const index = ({
           description={` Explore our diverse undergraduate and graduate programs, state-of-the-art facilities, and vibrant campus life. Join us in shaping the leaders of tomorrow.`}
         />
         <Advertisement />
+        <Calendar />
         <HeroSection data={heroSection} />
         <OurAssurance data={whyUs} />
         <ServiceCollection heading={true} data={academicProgram} />

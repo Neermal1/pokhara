@@ -1,4 +1,4 @@
-import CallToAction from "@/components/Footer/components/callToAction/CallToAction";
+import Calendar from "@/components/Calendar/Calendar";
 import PageHeader from "@/components/pageHeader/components/PageHeader";
 import AppLayout from "@/layout/AppLayout";
 import ContactInfo from "@/pageComponents/ContactUs/components/ContactInfo";
@@ -21,6 +21,7 @@ const ContactUs = () => {
           title: "Contact Us",
         }}
       />
+      <Calendar />
       <ContactInfo />
     </AppLayout>
   );

@@ -167,17 +167,6 @@ const Footer = () => {
                 Next Aussie Tech
               </a>
             </div>
-            <div>
-              {" "}
-              ©School 2024, All rights reserved. Developed By{" "}
-              <a
-                href="https://nextaussietech.com/"
-                target="_blank"
-                className="font-semibold underline hover:text-[#632115] transition-all relative group hover:-translate-y-[2px]"
-              >
-                Next Aussie Tech
-              </a>
-            </div>
           </div>
         </div>
       </div>

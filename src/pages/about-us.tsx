@@ -1,3 +1,4 @@
+import Calendar from "@/components/Calendar/Calendar";
 import CallToAction from "@/components/Footer/components/callToAction/CallToAction";
 import CollegeFeature from "@/components/feature/CollegeFeature";
 import PageHeader from "@/components/pageHeader/components/PageHeader";
@@ -26,6 +27,7 @@ const AboutUs = ({ testimonial, teachingProcess, data }: any) => {
           title: "About Us",
         }}
       />
+      <Calendar />
       <About />
       <OurMission data={data} />
       <CollegeFeature data={teachingProcess} />
