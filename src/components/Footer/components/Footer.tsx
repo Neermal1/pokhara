@@ -97,8 +97,12 @@ const Footer = () => {
                     <div className="flex flex-col gap-4 lg:items-center text-[14px]">
                       {data?.subHeading?.map((subdata, index) => {
                         return (
-                          <div key={index}>
+                          <div
+                            key={index}
+                            className="transition-all relative group hover:-translate-y-[5px] hover:text-[#632115]"
+                          >
                             <Link href={subdata?.slug}>{subdata?.subName}</Link>
+                            <div className="absolute w-[10%] h-[2px] transition-all duration-500 group-hover:w-[100%]  z-0  bottom-[-10px] left-0 right-0 rounded-[2px]  group-hover:bg-secondary "></div>
                           </div>
                         );
                       })}
@@ -159,6 +163,17 @@ const Footer = () => {
                 href="https://nextaussietech.com/"
                 target="_blank"
                 className="font-semibold underline"
+              >
+                Next Aussie Tech
+              </a>
+            </div>
+            <div>
+              {" "}
+              ©School 2024, All rights reserved. Developed By{" "}
+              <a
+                href="https://nextaussietech.com/"
+                target="_blank"
+                className="font-semibold underline hover:text-[#632115] transition-all relative group hover:-translate-y-[2px]"
               >
                 Next Aussie Tech
               </a>

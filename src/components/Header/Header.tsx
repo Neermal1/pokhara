@@ -13,6 +13,7 @@ import { Drawer } from "antd";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FaPhoneAlt } from "react-icons/fa";
+import { GrLocation } from "react-icons/gr";
 import { MdEmail } from "react-icons/md";
 
 const Header = () => {
