@@ -3,11 +3,17 @@ import PageHeader from "@/components/pageHeader/components/PageHeader";
 import { SSR_fetchData } from "@/helperfunctions/fetchData.helper";
 import AppLayout from "@/layout/AppLayout";
 import BlogDetail from "@/pageComponents/BlogDetail/BlogDetail";
-import { useRouter } from "next/router";
+import Metatag from "@/utils/Metatag";
 
 const BlogPage = ({ blogDetail }: any) => {
   return (
     <AppLayout>
+      <Metatag
+        heading={`Peace Zone Academy`}
+        subheading={blogDetail?.detail?.slug}
+        og_image={blogDetail?.detail?.image_link}
+        description={blogDetail?.detail?.description}
+      />
       <PageHeader
         data={{
           image:
