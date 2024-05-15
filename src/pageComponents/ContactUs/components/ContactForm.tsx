@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, Form, Input, notification } from "antd";
+import axiosInstance from "@/utils/axiosInstance";
 //emailjs
 
 const ContactForm = () => {
@@ -11,13 +12,25 @@ const ContactForm = () => {
   const handleContactSubmit = async (values: any) => {
     try {
       if (values) {
-        notification.success({
-          message: "We will reach you soon",
-        });
+        const payload = {
+          name: values?.name,
+          email: values?.email,
+          phone: values?.phone_number,
+          message: values?.message,
+        };
+        const response = await axiosInstance.post("contact/store", payload);
+        if (response.status === 200) {
+          notification.success({
+            message: response?.data?.message,
+          });
+        }
         form.resetFields();
       }
     } catch (e) {
       console.log(e);
+      notification?.error({
+        message: "Sorry Something went wrong!!",
+      });
     }
   };
 

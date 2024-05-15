@@ -1,13 +1,10 @@
 import PageHeader from "@/components/pageHeader/components/PageHeader";
-import { pageConstant } from "@/constants/pageConstant";
+import { SSR_fetchData } from "@/helperfunctions/fetchData.helper";
 import AppLayout from "@/layout/AppLayout";
 import BlogDetail from "@/pageComponents/BlogDetail/BlogDetail";
 import { useRouter } from "next/router";
 
-const BlogPage = () => {
-  const router = useRouter();
-  const { blog } = router.query;
-
+const BlogPage = ({ blogDetail }: any) => {
   return (
     <AppLayout>
       <PageHeader
@@ -17,7 +14,7 @@ const BlogPage = () => {
           title: "Blog Detail",
         }}
       />
-      <BlogDetail slug={blog} />
+      <BlogDetail data={blogDetail} />
     </AppLayout>
   );
 };
@@ -26,8 +23,9 @@ export default BlogPage;
 
 export async function getStaticPaths() {
   try {
-    const paths = pageConstant.map((data) => ({
-      params: { blog: data?.link },
+    const pageConstant: any = await SSR_fetchData("home/blogs");
+    const paths = pageConstant?.data?.map((data: any) => ({
+      params: { blog: data?.slug },
     }));
     return { paths, fallback: false };
   } catch (e) {
@@ -35,8 +33,11 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ params }: any) {
+  const { data: blogDetail } = await SSR_fetchData(`blog/${params?.blog}`);
   return {
-    props: { pageConstant },
+    props: {
+      blogDetail,
+    },
   };
 }

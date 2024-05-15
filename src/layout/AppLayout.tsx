@@ -3,19 +3,18 @@ import Header from "../components/Header/Header";
 
 interface ILayoutProps {
   children?: React.ReactNode;
+  data?: any;
 }
 
-const AppLayout = ({ children }: ILayoutProps) => {
+const AppLayout = ({ children, data }: ILayoutProps) => {
   return (
-    <div className="">
-      <div className="bg-white">
-        <div className="">
-          <Header />
-        </div>
-        <main>{children}</main>
-        <div>
-          <Footer />
-        </div>
+    <div className="bg-white">
+      <div className="">
+        <Header />
+      </div>
+      <main>{children}</main>
+      <div>
+        <Footer />
       </div>
     </div>
   );

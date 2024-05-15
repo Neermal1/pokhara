@@ -4,40 +4,10 @@ import "react-multi-carousel/lib/styles.css";
 //images
 import ComponentHeader from "@/components/componentHeader/ComponentHeader";
 import { responsiveItem } from "@/constants/responsiveItem";
-import Image from "next/image";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { RiDoubleQuotesR } from "react-icons/ri";
-import user from "../../../public/images/testimonial/girlone.jpg";
 
-const Testimonial = () => {
-  const fetchedData = [
-    {
-      name: "Louis Doe",
-      position: "Senior Devloper",
-      title: "My Journey at College",
-      desc: "I can't help but marvel at the milestones I've achieved. From the day I stepped onto campus, I knew I was embarking on a transformative experience. Thanks to the unwavering support of the faculty, the enriching academic environment, and the myriad of opportunities, I've accomplished feats I once only dreamed of. ",
-      img: user,
-    },
-    {
-      name: "Harry Sharma",
-      position: "Senior Engineer",
-
-      title: "Empowered by Education: My Story at College",
-
-      desc: "Through the guidance of supportive mentors and the rich academic offerings, I've not only earned a degree but discovered my true potential. [College Name] didn't just teach me subjects; it taught me resilience, determination, and the importance of chasing dreams.Today, as I stand on the brink of graduation, I am filled with gratitude for the doors that have opened, the barriers that have been shattered, and the person I've become. ",
-      img: user,
-    },
-    {
-      name: "Liam Patel",
-      position: "Senior Doctor",
-
-      title: "Finding My Voice at College Name",
-
-      desc: "From the moment I set foot on campus, I was welcomed into a community that encouraged me to explore, to question, and to evolve. The professors here didn't just teach me facts; they ignited my curiosity and challenged me to think critically",
-      img: user,
-    },
-  ];
-
+const Testimonial = ({ data }: any) => {
   const ButtonGroup = ({ next, previous }: any) => {
     return (
       <div
@@ -92,7 +62,7 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
                 renderButtonGroupOutside={true}
                 customButtonGroup={<ButtonGroup />}
               >
-                {fetchedData.map((data, index) => {
+                {data?.map((data: any, index: number) => {
                   return (
                     <div
                       key={index}
@@ -108,8 +78,8 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
                           data-aos-duration="1000"
                           className="relative  mt-6 group"
                         >
-                          <Image
-                            src={data?.img}
+                          <img
+                            src={data?.image_link}
                             alt=""
                             className="z-0 rounded-[8px]"
                           />
@@ -133,11 +103,11 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
                             {data?.title}
                           </div>
                           <div className="flex flex-col gap-5 z-20">
-                            <div className="text-[14px]">{data?.desc}</div>
+                            <div className="text-[14px]">{data?.message}</div>
                             <div>
                               <div className="font-semibold">{data?.name}</div>
                               <div className="text-[12px] font-semibold">
-                                {data?.position}
+                                {data?.designation}
                               </div>
                             </div>
                           </div>

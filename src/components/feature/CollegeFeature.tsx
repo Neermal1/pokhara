@@ -1,23 +1,6 @@
 //images
 
-const CollegeFeature = () => {
-  const repairList = [
-    {
-      title: "Innovative Teaching Methodologyt",
-      description:
-        "we believe in revolutionizing the traditional approach to education. Our teaching process is driven by innovation, creativity, and a commitment to empowering minds.",
-    },
-    {
-      title: "Student-Centered Learning",
-      description:
-        " We believe in fostering active engagement and ownership by tailoring our approach to meet the diverse needs and interests of each individual. Through collaborative projects, hands-on experiences, and opportunities for self-directed exploration, we empower students to take ownership of their education and pursue their passions with enthusiasm",
-    },
-    {
-      title: "Experiential Learning",
-      description:
-        "Our teaching process integrates real-world experiences and practical applications into the curriculum, allowing students to apply what they learn in the classroom to authentic situations.",
-    },
-  ];
+const CollegeFeature = ({ data }: any) => {
   return (
     <div className="bg-[#632115] text-white">
       <div className="layout component-padding">
@@ -30,7 +13,7 @@ const CollegeFeature = () => {
             </div>
             <div>
               <div className="grid lg:grid-cols-3 lg:gap-8 gap-14">
-                {repairList?.map((data, index) => {
+                {data?.map((data: any, index: number) => {
                   return (
                     <div
                       key={index}

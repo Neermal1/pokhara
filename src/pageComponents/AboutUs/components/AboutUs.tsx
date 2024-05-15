@@ -45,8 +45,12 @@ const About = () => {
             />
           </div>
         </div>
-        <div>
-          <img src="https://storage.googleapis.com/website-production/uploads/2023/01/audible-banner-ad-example.png" alt="" className="object-cover hover:scale-110 transition-all duration-700 w-[100%] rounded-[8px]" />
+        <div className="overflow-hidden">
+          <img
+            src="https://storage.googleapis.com/website-production/uploads/2023/01/audible-banner-ad-example.png"
+            alt=""
+            className="object-cover hover:scale-110 transition-all duration-700 w-[100%] rounded-[8px]"
+          />
         </div>
       </div>
     </div>

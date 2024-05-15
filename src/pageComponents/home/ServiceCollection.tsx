@@ -1,15 +1,13 @@
-//svg images
 import ComponentHeader from "@/components/componentHeader/ComponentHeader";
-import Image from "next/image";
 import Link from "next/link";
-import studentone from "../../../public/images/academicprograms/studentone.jpg";
-import studenttwo from "../../../public/images/academicprograms/studenttwo.jpg";
-import studentthree from "../../../public/images/academicprograms/studentthree.jpg";
-import studentfour from "../../../public/images/academicprograms/studentfour.jpg";
 import studentfive from "../../../public/images/academicprograms/studentfive.jpg";
+import studentfour from "../../../public/images/academicprograms/studentfour.jpg";
+import studentone from "../../../public/images/academicprograms/studentone.jpg";
 import studentsix from "../../../public/images/academicprograms/studentsix.jpg";
+import studentthree from "../../../public/images/academicprograms/studentthree.jpg";
+import studenttwo from "../../../public/images/academicprograms/studenttwo.jpg";
 
-const ServiceCollection = ({ heading }: any) => {
+const ServiceCollection = ({ heading, data }: any) => {
   const serviceList = [
     {
       img: studentone,
@@ -75,7 +73,7 @@ const ServiceCollection = ({ heading }: any) => {
             )}
 
             <div className="grid lg:grid-cols-3 grid-cols-1 gap-20">
-              {serviceList?.map((data, index: number) => {
+              {data?.map((data: any, index: number) => {
                 return (
                   <div
                     className="z-20 transition-all drop-shadow-md rounded-[10px] hover:brightness-110 hover:-translate-y-[3px]
@@ -92,18 +90,21 @@ const ServiceCollection = ({ heading }: any) => {
                       <div key={index} className="">
                         <div className="">
                           <div className="flex flex-col gap-6">
-                            <Image
-                              src={data?.img}
+                            <img
+                              src={data?.image_link}
                               alt=""
                               className="w-[100%] h-[25vh] object-cover rounded-t-[8px]"
                             />
                             <div className="flex flex-col gap-4 p-4">
                               <div className="text-[20px] font-semibold">
-                                {data?.service_name}
+                                {data?.title}
                               </div>
-                              <div className="text-[16px]">
-                                {data?.service_desc}
-                              </div>
+                              <div
+                                className="text-[16px] line-clamp-4"
+                                dangerouslySetInnerHTML={{
+                                  __html: data?.description,
+                                }}
+                              ></div>
                             </div>
                           </div>
                         </div>

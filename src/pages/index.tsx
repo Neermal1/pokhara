@@ -1,8 +1,8 @@
-import Advertisement from "@/components/Advertisement/Advertisement";
 import CallToAction from "@/components/Footer/components/callToAction/CallToAction";
 import ComponentHeader from "@/components/componentHeader/ComponentHeader";
 import CollegeFeature from "@/components/feature/CollegeFeature";
 import OurAssurance from "@/components/ourAssurance/components/OurAssurance";
+import { SSR_fetchData } from "@/helperfunctions/fetchData.helper";
 import AppLayout from "@/layout/AppLayout";
 import BlogCard from "@/pageComponents/Blogs/BlogCard";
 import HeroSection from "@/pageComponents/HeroSection";
@@ -10,29 +10,37 @@ import ServiceCollection from "@/pageComponents/home/ServiceCollection";
 import Testimonial from "@/pageComponents/home/Testimonial";
 import Metatag from "@/utils/Metatag";
 
-const index = () => {
+const index = ({
+  data,
+  heroSection,
+  whyUs,
+  academicProgram,
+  teachingProcess,
+  testimonial,
+  blogs,
+}: any) => {
   return (
     <div>
-      <AppLayout>
+      <AppLayout data={data}>
         <Metatag
-          heading={`School`}
+          heading={`Peace Zone Academy`}
           subheading="Home"
-          og_image={`https://media.istockphoto.com/id/577971232/photo/young-nepali-boys-in-classroom-bhaktapur.jpg?s=612x612&w=0&k=20&c=o4shD8gBdj02sFjLJLZXFJKMU5xYMJ26FPb11CVaKKE=`}
+          og_image={data?.image_link}
           description={` Explore our diverse undergraduate and graduate programs, state-of-the-art facilities, and vibrant campus life. Join us in shaping the leaders of tomorrow.`}
         />
-        <Advertisement />
-        <HeroSection />
-        <OurAssurance />
-        <ServiceCollection heading={true} />
-        <CollegeFeature />
-        <Testimonial />
+        {/* <Advertisement /> */}
+        <HeroSection data={heroSection} />
+        <OurAssurance data={whyUs} />
+        <ServiceCollection heading={true} data={academicProgram} />
+        <CollegeFeature data={teachingProcess} />
+        <Testimonial data={testimonial} />
         <div className="lg:mt-[100px] mt-[80px]">
           <ComponentHeader
             data={{
               heading: "Latest Blogs and Trends",
             }}
           />
-          <BlogCard />
+          <BlogCard data={blogs} />
         </div>
 
         <CallToAction />
@@ -42,3 +50,39 @@ const index = () => {
 };
 
 export default index;
+
+export async function getServerSideProps() {
+  try {
+    const { data } = await SSR_fetchData("company-profile");
+    const { data: heroSection } = await SSR_fetchData("home/banner");
+    const { data: whyUs } = await SSR_fetchData("home/why-us");
+    const { data: academicProgram } = await SSR_fetchData(
+      "home/academic-program"
+    );
+    const { data: teachingProcess } = await SSR_fetchData(
+      "home/teaching-process"
+    );
+
+    const { data: testimonial } = await SSR_fetchData("home/testimonial");
+    const { data: blogs } = await SSR_fetchData("home/blogs");
+
+    return {
+      props: {
+        data,
+        heroSection,
+        whyUs,
+        academicProgram,
+        teachingProcess,
+        testimonial,
+        blogs,
+      },
+    };
+  } catch (e) {
+    console.log(e);
+    return {
+      props: {
+        data: null,
+      },
+    };
+  }
+}

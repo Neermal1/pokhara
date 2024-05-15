@@ -1,7 +1,7 @@
 import { Modal } from "antd";
 import { useState } from "react";
 //images
-import school from "../../../public/images/ads.jpg";
+import School from "../../../public/images/ads.jpg";
 import Image from "next/image";
 
 const Advertisement = () => {
@@ -25,7 +25,7 @@ const Advertisement = () => {
       >
         <div className=" mt-10">
           <Image
-            src={school}
+            src={School}
             alt="loading"
             className="object-cover rounded-[8px] w-[100%]"
           ></Image>

@@ -1,29 +1,8 @@
-const OurAssurance = () => {
-  const assuranceList = [
-    {
-      title: "Academic Excellence",
-      description:
-        "This feature enables students to navigate their college campus seamlessly. With interactive maps accessible via the college website, users can find buildings, classrooms, facilities, and even parking spots with ease.",
-      link: "#",
-    },
-    {
-      title: "Supportive Learning Environment ",
-      description:
-        "This feature revolutionizes the way students plan their academic journey. Through the college website, students can access personalized course planning tools that consider their academic goals, major requirements, and scheduling preferences.",
-      link: "#",
-    },
-    {
-      title: "Flexibility and innovation",
-      description:
-        "Through immersive virtual tours accessible on the college website, prospective students can explore campus facilities, residence halls, academic buildings, and recreational spaces from the comfort of their homes",
-      link: "#",
-    },
-  ];
-
+const OurAssurance = ({ data }: any) => {
   return (
     <div className="layout component-padding black-color">
       <div className="grid lg:grid-cols-3 grid-cols-1 gap-8">
-        {assuranceList?.map((data, index) => {
+        {data?.map((data: any, index: any) => {
           return (
             <div
               key={index}

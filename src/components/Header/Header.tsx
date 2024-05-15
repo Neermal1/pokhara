@@ -7,23 +7,19 @@ import { RiMenu3Fill } from "react-icons/ri";
 //HeaderItems
 import HeaderItem from "./HeaderItem";
 
-//images
-import logo from "../../../public/images/logo/logo1.jpg";
-import logo2 from "../../../public/images/logo/logo2.jpg";
-
 //antd
+import useFetchData from "@/hooks/useFetchData";
+import { Drawer } from "antd";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import Button from "../button/components/Button";
-import Image from "next/image";
-import { Drawer } from "antd";
-import { useRouter } from "next/router";
 
 const Header = () => {
   const [topHeader, setTopHeader] = useState<boolean>(true);
-  const [activeMenu, setActiveMenu] = useState<string>("");
-  const [subMenu, setSubMenu] = useState<boolean>(false);
+
+  const { fetchedData, loading } = useFetchData("company-profile");
+
   const router = useRouter();
   const { pathname } = router;
   const header_items = HeaderItem();
@@ -56,7 +52,9 @@ const Header = () => {
     setOpen(false);
   };
 
-  if (header_items) {
+  if (loading) {
+    return <div>Loading</div>;
+  } else if (header_items && fetchedData) {
     return (
       <div className="  lg:text-[14px] text-[12px] black-color">
         {/* Top Header */}
@@ -67,65 +65,74 @@ const Header = () => {
               <div className="flex lg:flex-row flex-col lg:gap-4 gap-2 justify-between items-center">
                 <div className="flex lg:flex-row flex-col gap-4">
                   <div className="flex items-center gap-4">
-                    <div className="flex gap-[4px] items-center text-[12px]">
-                      <div>
-                        <FaPhoneAlt />
+                    {fetchedData?.company_phone && (
+                      <div className="flex gap-[4px] items-center text-[12px]">
+                        <div>
+                          <FaPhoneAlt />
+                        </div>
+                        <div>
+                          <a href={`tel:${fetchedData?.company_phone}`}>
+                            {fetchedData?.company_phone}
+                          </a>
+                        </div>
                       </div>
-                      <div>
-                        <a href={`tel:789456123`}>+977-78945113</a>
-                      </div>
-                    </div>
-                    <div className="flex gap-[4px] items-center text-[12px]">
-                      <div>
-                        <FaPhoneAlt />
-                      </div>
-                      <div>
-                        <a href={`tel:789456123`}>+977-789456123</a>
-                      </div>
-                    </div>
+                    )}
                   </div>
-                  <div className="flex gap-[4px] lg:justify-start justify-center items-center text-[12px]">
-                    <div>
-                      <MdEmail size={14} />
+                  {fetchedData?.company_email && (
+                    <div className="flex gap-[4px] lg:justify-start justify-center items-center text-[12px]">
+                      <div>
+                        <MdEmail size={14} />
+                      </div>
+                      <div>
+                        <a
+                          href={`mailto:${fetchedData?.company_email}`}
+                          className=""
+                        >
+                          {fetchedData?.company_email}
+                        </a>
+                      </div>
                     </div>
-                    <div>
-                      <a href={`mailto:abc@gmail.com`} className="">
-                        info@peacezone.com
-                      </a>
-                    </div>
-                  </div>
+                  )}
                 </div>
 
                 <div className="flex  lg:gap-8 gap-4 lg:justify-start justify-center lg:items-start items-center">
-                  <Link
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    className=""
-                  >
-                    <FaFacebookF className="h-[2vh] w-[2vh]" />
-                  </Link>
-                  <Link
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                    className=""
-                  >
-                    <FaSquareInstagram size={16} />
-                  </Link>
-                  <Link
-                    href="https://www.youtube.com/"
-                    target="_blank"
-                    className=" hover:cursor-pointer"
-                  >
-                    <IoLogoYoutube size={18} />
-                  </Link>
+                  {fetchedData?.facebook && (
+                    <Link
+                      href={fetchedData?.facebook}
+                      target="_blank"
+                      className=""
+                    >
+                      <FaFacebookF className="h-[2vh] w-[2vh]" />
+                    </Link>
+                  )}
+                  {fetchedData?.instagram && (
+                    <Link
+                      href={fetchedData?.instagram}
+                      target="_blank"
+                      className=""
+                    >
+                      <FaSquareInstagram size={16} />
+                    </Link>
+                  )}
+                  {fetchedData?.youtube && (
+                    <Link
+                      href={fetchedData?.youtube}
+                      target="_blank"
+                      className=" hover:cursor-pointer"
+                    >
+                      <IoLogoYoutube size={18} />
+                    </Link>
+                  )}
 
-                  <Link
-                    href="https://twitter.com/"
-                    target="_blank"
-                    className=" hover:cursor-pointer"
-                  >
-                    <FaXTwitter size={18} />
-                  </Link>
+                  {fetchedData?.twitter && (
+                    <Link
+                      href={fetchedData?.twitter}
+                      target="_blank"
+                      className=" hover:cursor-pointer "
+                    >
+                      <FaXTwitter size={18} />
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
@@ -140,11 +147,11 @@ const Header = () => {
           <div className="layout lg:px-4 px-6">
             <div className=" grid lg:grid-cols-12 grid-cols-2 items-center  justify-between ">
               <Link href="/" className=" lg:col-span-2 ">
-                <Image
+                <img
                   alt="loading"
-                  src={logo}
+                  src={fetchedData?.logo_link}
                   className="h-[85px] w-[85px] object-cover"
-                ></Image>
+                ></img>
               </Link>
               <div className=" lg:flex justify-center items-center hidden lg:col-span-8  gap-[30px]">
                 {header_items.map((data: any, index) => {
@@ -187,11 +194,11 @@ const Header = () => {
               </div>
               <div className="hidden lg:flex lg:col-span-2  justify-end">
                 <Link href="/" className=" ">
-                  <Image
+                  <img
                     alt="loading"
-                    src={logo2}
+                    src={fetchedData?.logo2_link}
                     className="h-[75px] w-[75px] object-cover"
-                  ></Image>
+                  ></img>
                 </Link>
               </div>
 

@@ -1,7 +1,7 @@
 import { BiLogoGmail } from "react-icons/bi";
 import { FaPhoneAlt } from "react-icons/fa";
 
-const AllTeams = () => {
+const AllTeams = ({ teamData }: any) => {
   const teams = [
     {
       name: "Mr. John Doe",
@@ -41,12 +41,12 @@ const AllTeams = () => {
   ];
   return (
     <div className="layout component-padding">
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 ">
-        {teams?.map((data: any, index: number) => {
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-10  ">
+        {teamData?.map((data: any, index: number) => {
           return (
             <div key={index}>
               <div className="">
-                <div className=" product-card w-[300px] rounded-md shadow-xl overflow-hidden z-[10] relative cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group">
+                <div className=" product-card w-[300px] h-[42vh] rounded-md shadow-xl overflow-hidden z-[10] relative cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group">
                   <div className="absolute -left-[40%] top-0 group-hover:rotate-12 transition-all duration-300 group-hover:scale-150"></div>
                   <div className="absolute rounded-full bg-[#d27785] z-20 left-1/2 top-[44%] h-[110%] w-[110%] -translate-x-1/2 group-hover:top-[58%] transition-all duration-300"></div>
                   <div className="para uppercase text-center leading-none z-40">
@@ -56,37 +56,44 @@ const AllTeams = () => {
                   </div>
                   <div className="img w-[180px] aspect-square z-40 rounded-md">
                     <img
-                      src={data?.image}
+                      src={data?.image_link}
                       alt=""
                       className="h-[200px] object-cover"
                     />
                   </div>
                   <div className="btm-_container z-40 flex flex-row justify-between items-end gap-10">
                     <div className="flex flex-col items-center gap-1">
-                      <div className="inline-flex gap-3 items-center justify-center">
-                        <div className="p-1  bg-white flex items-center justify-center rounded-full">
-                          <FaPhoneAlt className="text-color text-[12px]" />
-                        </div>
-                        <a
-                          href={`tel:${data?.phone}`}
-                          className="font-semibold text-xs text-color"
-                        >
-                          {data?.phone}
-                        </a>
-                      </div>
-                      <div className="flex flex-row gap-2">
+                      {data?.phone && (
                         <div className="inline-flex gap-3 items-center justify-center">
-                          <div className="p-1 bg-white flex items-center justify-center rounded-full">
-                            <BiLogoGmail className="text-color text-[12px]" />
+                          <div className="p-1  bg-white flex items-center justify-center rounded-full">
+                            <FaPhoneAlt className="text-color text-[12px]" />
                           </div>
                           <a
-                            href={`tel:${data?.email}`}
-                            className="font-semibold text-sm text-color"
+                            href={`tel:${data?.phone}`}
+                            className="font-semibold text-xs text-color"
                           >
-                            {data?.email}
+                            {data?.phone}
                           </a>
                         </div>
-                      </div>
+                      )}
+                      {data?.email && (
+                        <div className="flex flex-row gap-2">
+                          <div className="inline-flex gap-3 items-center justify-center">
+                            <div className="p-1 bg-white flex items-center justify-center rounded-full">
+                              <BiLogoGmail className="text-color text-[12px]" />
+                            </div>
+                            <a
+                              href={`tel:${data?.email}`}
+                              className="font-semibold text-sm text-color"
+                            >
+                              {data?.email}
+                            </a>
+                          </div>
+                        </div>
+                      )}
+                      {data?.designation && (
+                        <div className="z-40">{data?.designation}</div>
+                      )}
                     </div>
                   </div>
                 </div>
