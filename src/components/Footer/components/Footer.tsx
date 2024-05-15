@@ -8,15 +8,6 @@ const Footer = () => {
       heading: "Know More About Us",
       subHeading: [
         {
-          subName: "Home",
-          slug: "/",
-        },
-
-        {
-          subName: "About Us",
-          slug: "/about-us",
-        },
-        {
           subName: "Teams",
           slug: "/teams",
         },
@@ -33,6 +24,10 @@ const Footer = () => {
     {
       heading: "Quick Links",
       subHeading: [
+        {
+          subName: "Home",
+          slug: "/",
+        },
         {
           subName: "About Us",
           slug: "/about-us",

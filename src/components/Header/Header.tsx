@@ -13,7 +13,6 @@ import { Drawer } from "antd";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FaPhoneAlt } from "react-icons/fa";
-import { GrLocation } from "react-icons/gr";
 import { MdEmail } from "react-icons/md";
 
 const Header = () => {
@@ -65,7 +64,7 @@ const Header = () => {
             <div className="layout py-2 lg:px-4 px-6">
               <div className="flex lg:flex-row flex-col lg:gap-4 gap-2 justify-between items-center">
                 <div className="flex lg:flex-row flex-col gap-4">
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center justify-center gap-4">
                     {fetchedData?.company_phone && (
                       <div className="flex gap-[4px] items-center text-[12px]">
                         <div>

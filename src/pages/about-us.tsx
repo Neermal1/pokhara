@@ -28,11 +28,11 @@ const AboutUs = ({ testimonial, teachingProcess, data }: any) => {
         }}
       />
       <Calendar />
-      <About />
+      <About data={data} />
       <OurMission data={data} />
       <CollegeFeature data={teachingProcess} />
       <Testimonial data={testimonial} />
-      <CoreValues />
+      <CoreValues data={data} />
 
       <div className="mt-20">
         <CallToAction />

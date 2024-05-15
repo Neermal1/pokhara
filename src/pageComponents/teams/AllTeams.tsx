@@ -41,12 +41,12 @@ const AllTeams = ({ teamData }: any) => {
   ];
   return (
     <div className="layout component-padding">
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-10  ">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  ">
         {teamData?.map((data: any, index: number) => {
           return (
             <div key={index}>
               <div className="">
-                <div className=" product-card w-[300px] h-[42vh] rounded-md shadow-xl overflow-hidden z-[10] relative cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group">
+                <div className=" product-card w-[300px]  rounded-md shadow-xl overflow-hidden z-[10] relative cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group">
                   <div className="absolute -left-[40%] top-0 group-hover:rotate-12 transition-all duration-300 group-hover:scale-150"></div>
                   <div className="absolute rounded-full bg-[#d27785] z-20 left-1/2 top-[44%] h-[110%] w-[110%] -translate-x-1/2 group-hover:top-[58%] transition-all duration-300"></div>
                   <div className="para uppercase text-center leading-none z-40">
@@ -61,7 +61,7 @@ const AllTeams = ({ teamData }: any) => {
                       className="h-[200px] object-cover"
                     />
                   </div>
-                  <div className="btm-_container z-40 flex flex-row justify-between items-end gap-10">
+                  <div className="btm-_container z-40 flex flex-row justify-between  gap-10  h-[8vh]">
                     <div className="flex flex-col items-center gap-1">
                       {data?.phone && (
                         <div className="inline-flex gap-3 items-center justify-center">

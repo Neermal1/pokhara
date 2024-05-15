@@ -13,8 +13,8 @@ const BlogDetail = ({ data }: any) => {
         </div>
 
         <div>
-          <Image
-            src={student1}
+          <img
+            src={data?.detail?.image_link}
             alt="loading"
             className="w-full h-[50vh] object-cover rounded-[8px]"
           />
