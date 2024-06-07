@@ -5,8 +5,15 @@ export interface IMetatags {
   subheading: string;
   og_image?: any;
   description?: string;
+  keywords?: string;
 }
-const Metatag = ({ heading, subheading, description, og_image }: IMetatags) => {
+const Metatag = ({
+  heading,
+  subheading,
+  description,
+  og_image,
+  keywords,
+}: IMetatags) => {
   return (
     <Head>
       <meta charSet="UTF-8"></meta>
@@ -19,7 +26,7 @@ const Metatag = ({ heading, subheading, description, og_image }: IMetatags) => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#1e1e1e"></meta>
       <link rel="icon" href="/favicon.ico" />
-
+      <meta name="keywords" content={keywords} />
       <meta property="og:locale" content="en" />
       <meta property="og:type" content="website" />
       <meta property="og:description" content={description} />

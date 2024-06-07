@@ -17,7 +17,7 @@ module.exports = {
         "3xl": "1920px", // Screen width 1920px
       },
       colors: {
-        primary: "#00266B",
+        primary: "#d27785",
         secondary: "#d27785"
       }
     },

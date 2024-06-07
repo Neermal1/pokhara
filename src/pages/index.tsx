@@ -25,10 +25,11 @@ const index = ({
     <div>
       <AppLayout data={data}>
         <Metatag
-          heading={`Peace Zone Academy`}
+          heading={data?.meta_title}
           subheading="Home"
           og_image={data?.image_link}
-          description={` Explore our diverse undergraduate and graduate programs, state-of-the-art facilities, and vibrant campus life. Join us in shaping the leaders of tomorrow.`}
+          description={data?.meta_description}
+          keywords={data?.meta_keywords}
         />
         <Advertisement />
         <Calendar />

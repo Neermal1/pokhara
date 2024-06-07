@@ -6,6 +6,8 @@ import { SSR_fetchData } from "@/helperfunctions/fetchData.helper";
 import AppLayout from "@/layout/AppLayout";
 import About from "@/pageComponents/AboutUs/components/AboutUs";
 import CoreValues from "@/pageComponents/AboutUs/components/CoreValues";
+import Message from "@/pageComponents/AboutUs/components/Message";
+import MessageFromDirector from "@/pageComponents/AboutUs/components/MessageFromDirector";
 import OurMission from "@/pageComponents/AboutUs/components/OurMission";
 import Testimonial from "@/pageComponents/home/Testimonial";
 import Metatag from "@/utils/Metatag";
@@ -33,6 +35,10 @@ const AboutUs = ({ testimonial, teachingProcess, data }: any) => {
       <CollegeFeature data={teachingProcess} />
       <Testimonial data={testimonial} />
       <CoreValues data={data} />
+
+      <Message data={data} />
+
+      <MessageFromDirector data={data} />
 
       <div className="mt-20">
         <CallToAction />

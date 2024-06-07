@@ -13,6 +13,7 @@ const BlogPage = ({ blogDetail }: any) => {
         subheading={blogDetail?.detail?.slug}
         og_image={blogDetail?.detail?.image_link}
         description={blogDetail?.detail?.description}
+        keywords={blogDetail?.detail?.slug}
       />
       <PageHeader
         data={{
