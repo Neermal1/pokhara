@@ -12,8 +12,8 @@ const BlogPage = ({ blogDetail }: any) => {
         heading={`Peace Zone Academy`}
         subheading={blogDetail?.detail?.slug}
         og_image={blogDetail?.detail?.image_link}
-        description={blogDetail?.detail?.description}
-        keywords={blogDetail?.detail?.slug}
+        description={blogDetail?.detail?.meta_description}
+        keywords={blogDetail?.detail?.meta_keywords}
       />
       <PageHeader
         data={{
