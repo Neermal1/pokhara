@@ -10,7 +10,7 @@ const BlogPage = ({ blogDetail }: any) => {
     <AppLayout>
       <Metatag
         heading={`Peace Zone Academy`}
-        subheading={blogDetail?.detail?.meta_title}
+        subheading={blogDetail?.detail?.meta_title?.meta_title || blogDetail?.detail?.meta_title?.title}
         og_image={blogDetail?.detail?.image_link}
         description={blogDetail?.detail?.meta_description}
         keywords={blogDetail?.detail?.meta_keywords}
