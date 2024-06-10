@@ -17,7 +17,6 @@ const Metatag = ({
   return (
     <Head>
       <meta charSet="UTF-8"></meta>
-      <title>{`${heading} - ${subheading}`}</title>
 
       <meta name="description" content={description}/>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,6 +28,7 @@ const Metatag = ({
       <meta property="og:title" content={subheading} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={og_image} />
+      <title>{`${heading} - ${subheading}`}</title>
     </Head>
   );
 };
