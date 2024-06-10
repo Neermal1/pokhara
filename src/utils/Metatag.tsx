@@ -26,6 +26,7 @@ const Metatag = ({
       <meta name="keywords" content={keywords} />
       <meta property="og:locale" content="en" />
       <meta property="og:type" content="website" />
+      <meta property="og:title" content={subheading} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={og_image} />
     </Head>
