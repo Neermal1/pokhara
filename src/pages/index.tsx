@@ -25,8 +25,8 @@ const index = ({
     <div>
       <AppLayout data={data}>
         <Metatag
-          heading={data?.meta_title}
-          subheading="Home"
+          heading="Home"
+          subheading={data?.meta_title}
           og_image={data?.image_link}
           description={data?.meta_description}
           keywords={data?.meta_keywords}
