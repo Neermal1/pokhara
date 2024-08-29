@@ -33,3 +33,7 @@
   max-height: 12px;
   height: 4px;
 }
+
+iframe {
+  width: 100%;
+}
