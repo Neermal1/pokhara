@@ -20,7 +20,7 @@ const AcademicPrograms = ({ academicProgram }: any) => {
         <PageHeader
           data={{
             image:
-              "https://www.andreeharpur.com/wp-content/uploads/2018/08/csp-base-page.jpg",
+              "https://admin.peacezoneacademy.com/upload/images/gallery/17150631774434221478.jpg",
             title: "Our Academic Programs",
             subDetail:
               " Whether it's a minor fix or a major overhaul, trust us to restore your appliances to optimal functionality, providing you with peace of mind and convenience at every step.",

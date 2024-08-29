@@ -19,7 +19,7 @@ const Teams = ({ teamData }: any) => {
       <PageHeader
         data={{
           image:
-            "https://t4.ftcdn.net/jpg/05/10/86/29/360_F_510862902_K5o4Sz7odYbuFs6FLKqTH3L79eTDtjYc.jpg",
+            "https://admin.peacezoneacademy.com/upload/images/gallery/17150631774434221478.jpg",
           title: "Teams",
         }}
       />

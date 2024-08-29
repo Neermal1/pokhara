@@ -19,7 +19,7 @@ const Blog = ({ blogs }: any) => {
       <PageHeader
         data={{
           image:
-            "https://www.andreeharpur.com/wp-content/uploads/2018/08/csp-base-page.jpg",
+            "https://admin.peacezoneacademy.com/upload/images/gallery/17150631774434221478.jpg",
           title: "Blog",
         }}
       />
