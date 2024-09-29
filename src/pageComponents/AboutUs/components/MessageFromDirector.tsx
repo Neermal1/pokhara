@@ -8,14 +8,14 @@ const MessageFromDirector = ({ data }: any) => {
       <div className="">
         <ComponentHeader
           data={{
-            heading: "Message from Director",
+            heading: "Message From The Founder",
           }}
         />
       </div>
 
       <div className="grid lg:grid-cols-12 gap-[100px]">
         <div
-          className="col-span-7 "
+          className="col-span-7 text-justify"
           dangerouslySetInnerHTML={{
             __html: data?.director_message,
           }}

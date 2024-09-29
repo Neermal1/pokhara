@@ -8,7 +8,7 @@ const Message = ({ data }: any) => {
       <div className="">
         <ComponentHeader
           data={{
-            heading: "Message from Prinicpal",
+            heading: "Message From The Prinicpal",
           }}
         />
       </div>
@@ -29,7 +29,7 @@ const Message = ({ data }: any) => {
         </div>
 
         <div
-          className="col-span-7 "
+          className="col-span-7 text-justify"
           dangerouslySetInnerHTML={{
             __html: data?.principal_message,
           }}

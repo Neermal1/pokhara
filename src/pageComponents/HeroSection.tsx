@@ -24,12 +24,12 @@ const HeroSection = ({ data }: any) => {
                   {data?.sub_title}
                 </div>
               </div>
-              <div className="flex flex-col gap-8">
-                <div className="lg:text-[58px] text-[30px] text-white font-semibold">
+              <div className="flex flex-col gap-9">
+                <div className="lg:text-[43px] text-[30px] text-white font-semibold">
                   {data?.title}
                 </div>
-                <div className="flex flex-col gap-7">
-                  <div className="text-white">{data?.description}</div>
+                <div className="flex flex-col gap-8">
+                  <div className="text-white text-justify">{data?.description}</div>
                   <Link href="/contact-us">
                     <div
                       className="text-white inline-block cursor-pointer transition-all p-3 drop-shadow-md rounded-[10px]  px-6 py-2  bg-[#632115]

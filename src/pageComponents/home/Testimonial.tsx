@@ -43,9 +43,9 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
           <div>
             <ComponentHeader
               data={{
-                heading: "What Our Students Are Saying",
+                heading: "From Our Alumni",
                 subheading:
-                  "Insights from satisfied customers: their feedback tells the story of our quality service and products",
+                  "Discover the inspiring journeys of our alumni as they turn dreams into reality",
               }}
             />
           </div>
@@ -82,6 +82,7 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
                             src={data?.image_link}
                             alt=""
                             className="z-0 rounded-[8px]"
+                            style={{ height: "90vh", width: "100vh", objectFit: "cover" }}
                           />
                           <div className="absolute group-hover:bg-[#d27785] text-white bg-[#632115] drop-shadow-lg top-[-22px] z-50 lg:right-[-20px] right-[2px] h-[40px] w-[40px] lg:h-[60px] lg:w-[60px] rounded-full flex items-center justify-center">
                             <RiDoubleQuotesR
@@ -99,11 +100,11 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
                             color: "var(--black-color)",
                           }}
                         >
-                          <div className="text-[30px]  font-semibold z-20">
+                          <div className="text-[30px]  font-semibold z-20 text-justify">
                             {data?.title}
                           </div>
                           <div className="flex flex-col gap-5 z-20">
-                            <div className="text-[14px]">{data?.message}</div>
+                            <div className="text-[14px] text-justify">{data?.message}</div>
                             <div>
                               <div className="font-semibold">{data?.name}</div>
                               <div className="text-[12px] font-semibold">

@@ -62,11 +62,20 @@ const AllTeams = ({ teamData }: any) => {
                     />
                   </div>
                   <div className="btm-_container z-40 flex flex-row justify-between  gap-10  h-[8vh]">
-                    <div className="flex flex-col items-center gap-1">
+                    <div className="flex flex-col items-center font-semibold gap-1">
                       {data?.designation && (
                         <div className="z-40">{data?.designation}</div>
                       )}
-                      {data?.phone && (
+                      {data?.subject && (
+                        <div className="inline-flex gap-3 items-center justify-center">
+                          <a
+                            className="font-semibold text-color"
+                          >
+                            ( {data?.subject} )
+                          </a>
+                        </div>
+                      )}
+                      {/* {data?.phone && (
                         <div className="inline-flex gap-3 items-center justify-center">
                           <div className="p-1  bg-white flex items-center justify-center rounded-full">
                             <FaPhoneAlt className="text-color text-[12px]" />
@@ -78,8 +87,8 @@ const AllTeams = ({ teamData }: any) => {
                             {data?.phone}
                           </a>
                         </div>
-                      )}
-                      {data?.email && (
+                      )} */}
+                      {/* {data?.email && (
                         <div className="flex flex-row gap-2">
                           <div className="inline-flex gap-3 items-center justify-center">
                             <div className="p-1 bg-white flex items-center justify-center rounded-full">
@@ -93,7 +102,7 @@ const AllTeams = ({ teamData }: any) => {
                             </a>
                           </div>
                         </div>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 </div>
