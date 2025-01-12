@@ -26,7 +26,7 @@ const ContactDetail = () => {
               >
                 <FaPhoneAlt size={15} />
               </div>
-              <a href={`tel:8178083860`}>+1-817-808-3860</a>
+              <a href={`tel:8178083860`}>+977-9817179606</a>
             </div>
             <div className="flex items-center gap-2">
               <div
