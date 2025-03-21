@@ -12,7 +12,18 @@ import ServiceCollection from "@/pageComponents/home/ServiceCollection";
 import Testimonial from "@/pageComponents/home/Testimonial";
 import Metatag from "@/utils/Metatag";
 
-const index = ({
+// Define Types for Props
+interface HomeProps {
+  data: any;
+  heroSection: any;
+  whyUs: any;
+  academicProgram: any;
+  teachingProcess: any;
+  testimonial: any;
+  blogs: any;
+}
+
+const Index = ({
   data,
   heroSection,
   whyUs,
@@ -20,7 +31,16 @@ const index = ({
   teachingProcess,
   testimonial,
   blogs,
-}: any) => {
+}: HomeProps) => {
+  // Render fallback UI if data is missing or there's an error
+  if (!data) {
+    return (
+      <div>
+        <h1>Error loading the data. Please try again later.</h1>
+      </div>
+    );
+  }
+
   return (
     <div>
       <AppLayout data={data}>
@@ -33,43 +53,51 @@ const index = ({
         />
         <Advertisement />
         <Calendar />
-        <HeroSection data={heroSection} />
-        <OurAssurance data={whyUs} />
-        <ServiceCollection heading={true} data={academicProgram} />
-        <CollegeFeature data={teachingProcess} />
-        <Testimonial data={testimonial} />
-        <div className="lg:mt-[100px] mt-[80px]">
-          <ComponentHeader
-            data={{
-              heading: "Latest Blogs and Trends",
-            }}
-          />
-          <BlogCard data={blogs} />
-        </div>
-
+        {heroSection && <HeroSection data={heroSection} />}
+        {whyUs && <OurAssurance data={whyUs} />}
+        {academicProgram && <ServiceCollection heading={true} data={academicProgram} />}
+        {teachingProcess && <CollegeFeature data={teachingProcess} />}
+        {testimonial && <Testimonial data={testimonial} />}
+        {blogs && (
+          <div className="lg:mt-[100px] mt-[80px]">
+            <ComponentHeader
+              data={{
+                heading: "Latest Blogs and Trends",
+              }}
+            />
+            <BlogCard data={blogs} />
+          </div>
+        )}
         <CallToAction />
       </AppLayout>
     </div>
   );
 };
 
-export default index;
+export default Index;
 
 export async function getServerSideProps() {
   try {
-    const { data } = await SSR_fetchData("company-profile");
-    const { data: heroSection } = await SSR_fetchData("home/banner");
-    const { data: whyUs } = await SSR_fetchData("home/why-us");
-    const { data: academicProgram } = await SSR_fetchData(
-      "home/academic-program"
-    );
-    const { data: teachingProcess } = await SSR_fetchData(
-      "home/teaching-process"
-    );
+    // Fetch data concurrently to improve performance
+    const [
+      { data },
+      { data: heroSection },
+      { data: whyUs },
+      { data: academicProgram },
+      { data: teachingProcess },
+      { data: testimonial },
+      { data: blogs },
+    ] = await Promise.all([
+      SSR_fetchData("company-profile"),
+      SSR_fetchData("home/banner"),
+      SSR_fetchData("home/why-us"),
+      SSR_fetchData("home/academic-program"),
+      SSR_fetchData("home/teaching-process"),
+      SSR_fetchData("home/testimonial"),
+      SSR_fetchData("home/blogs"),
+    ]);
 
-    const { data: testimonial } = await SSR_fetchData("home/testimonial");
-    const { data: blogs } = await SSR_fetchData("home/blogs");
-
+    // Return the fetched data as props
     return {
       props: {
         data,
@@ -82,10 +110,10 @@ export async function getServerSideProps() {
       },
     };
   } catch (e) {
-    console.log(e);
+    console.error("Error fetching data:", e);
     return {
       props: {
-        data: null,
+        data: null, // Fallback in case of error
       },
     };
   }
