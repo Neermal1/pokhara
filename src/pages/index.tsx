@@ -11,6 +11,7 @@ import HeroSection from "@/pageComponents/HeroSection";
 import ServiceCollection from "@/pageComponents/home/ServiceCollection";
 import Testimonial from "@/pageComponents/home/Testimonial";
 import Metatag from "@/utils/Metatag";
+import Header from "@/components/Header/Header"; // Assuming Header is here
 
 // Define Types for Props
 interface HomeProps {
@@ -51,6 +52,9 @@ const Index = ({
           description={data?.meta_description}
           keywords={data?.meta_keywords}
         />
+        {/* Add the Header component */}
+        <Header data={data} />
+        
         <Advertisement />
         <Calendar />
         {heroSection && <HeroSection data={heroSection} />}
