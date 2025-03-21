@@ -12,7 +12,7 @@ import ServiceCollection from "@/pageComponents/home/ServiceCollection";
 import Testimonial from "@/pageComponents/home/Testimonial";
 import Metatag from "@/utils/Metatag";
 
-// Define Types for Props
+// Define the props type for Home page
 interface HomeProps {
   data: any;
   heroSection: any;
@@ -32,7 +32,7 @@ const Index = ({
   testimonial,
   blogs,
 }: HomeProps) => {
-  // Render fallback UI if data is missing or there's an error
+  // Fallback UI when data is missing or an error occurs
   if (!data) {
     return (
       <div>
@@ -44,6 +44,7 @@ const Index = ({
   return (
     <div>
       <AppLayout data={data}>
+        {/* Meta tag component */}
         <Metatag
           heading="Home"
           subheading={data?.meta_title}
@@ -52,16 +53,26 @@ const Index = ({
           keywords={data?.meta_keywords}
         />
         
-        {/* Add the Header component */}
-        <Header data={data} /> {/* This line should now work correctly */}
-        
+        {/* Add Advertisement and Calendar */}
         <Advertisement />
         <Calendar />
+
+        {/* Render Hero Section if data exists */}
         {heroSection && <HeroSection data={heroSection} />}
+
+        {/* Render Our Assurance section if data exists */}
         {whyUs && <OurAssurance data={whyUs} />}
+
+        {/* Render Service Collection if data exists */}
         {academicProgram && <ServiceCollection heading={true} data={academicProgram} />}
+
+        {/* Render College Feature if data exists */}
         {teachingProcess && <CollegeFeature data={teachingProcess} />}
+
+        {/* Render Testimonial section if data exists */}
         {testimonial && <Testimonial data={testimonial} />}
+
+        {/* Render Blog Cards and header if blogs data exists */}
         {blogs && (
           <div className="lg:mt-[100px] mt-[80px]">
             <ComponentHeader
@@ -72,6 +83,8 @@ const Index = ({
             <BlogCard data={blogs} />
           </div>
         )}
+
+        {/* Call to Action */}
         <CallToAction />
       </AppLayout>
     </div>
@@ -82,7 +95,7 @@ export default Index;
 
 export async function getServerSideProps() {
   try {
-    // Fetch data concurrently to improve performance
+    // Fetch all the data concurrently using Promise.all for performance improvement
     const [
       { data },
       { data: heroSection },
@@ -115,9 +128,10 @@ export async function getServerSideProps() {
     };
   } catch (e) {
     console.error("Error fetching data:", e);
+    // Return null for data in case of an error, you can handle it in the component
     return {
       props: {
-        data: null, // Fallback in case of error
+        data: null,
       },
     };
   }
